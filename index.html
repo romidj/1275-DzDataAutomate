@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DzDataAutomate - Jury Defense Presentation</title>
+    <link rel="stylesheet" href="presentation.css">
+    <script src="presentation.js" defer></script>
+</head>
+<body>
+
+    <!-- Floating Background Blobs -->
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+
+    <div class="presentation-container">
+        
+        <!-- Sidebar Toggle -->
+        <button class="sidebar-toggle" title="Menu (M)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+
+        <!-- Slide Drawer Menu -->
+        <nav class="sidebar">
+            <div class="sidebar-title">Dz<span>DataAutomate</span></div>
+            <ul class="slide-menu-list">
+                <!-- Populated dynamically via JS -->
+            </ul>
+        </nav>
+
+        <!-- Header Overlay -->
+        <div class="header-overlay">
+            <div class="estin-logo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                ESTIN <span>• AI & DS</span>
+            </div>
+        </div>
+
+        <!-- Slide Deck Container -->
+        <main class="slide-deck">
+
+            <!-- SLIDE 1: Title Slide (Light Theme) -->
+            <section class="slide light-theme" id="slide-1">
+                <div class="flex-col" style="justify-content: center; height: 100%;">
+                    <div style="margin-bottom: 2rem;">
+                        <span style="font-size: 0.9rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-dark); background: rgba(57, 255, 20, 0.1); padding: 0.4rem 1rem; border-radius: 20px;">
+                            Jury Defense • Order 1275
+                        </span>
+                    </div>
+                    
+                    <h1 style="font-size: 3.5rem; margin-bottom: 1rem; color: var(--bg-dark);">
+                        Dz<span style="color: var(--accent-dark);">DataAutomate</span>
+                    </h1>
+                    <p style="font-size: 1.5rem; font-weight: 500; color: var(--text-muted-light); margin-bottom: 3rem; max-width: 700px;">
+                        "Data Science Automation, made for everyone"
+                    </p>
+
+                    <div class="grid-2" style="max-height: 180px; gap: 4rem;">
+                        <div>
+                            <h3 style="color: var(--bg-dark); border-bottom: 2px solid var(--accent-dark); padding-bottom: 0.5rem; margin-bottom: 1rem;">Founding Team</h3>
+                            <p style="font-size: 0.95rem; margin-bottom: 0.25rem;"><strong>Benoudjit Lyne</strong> — ML Pipeline & Docs</p>
+                            <p style="font-size: 0.95rem; margin-bottom: 0.25rem;"><strong>Chikhi Mey Aya</strong> — Backend & AI Integration</p>
+                            <p style="font-size: 0.95rem;"><strong>Djouzi Nour El Houda</strong> — Frontend & UX</p>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--bg-dark); border-bottom: 2px solid var(--accent-dark); padding-bottom: 0.5rem; margin-bottom: 1rem;">Supervisors</h3>
+                            <p style="font-size: 0.95rem; margin-bottom: 0.25rem;"><strong>Dr. Benslimane Salim</strong> (ESTIN)</p>
+                            <p style="font-size: 0.95rem; margin-bottom: 0.25rem;"><strong>Dr. Amara Karima</strong> (ESTIN)</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted-light); margin-top: 0.5rem;">Academic Year: 2025/2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>Welcome the members of the jury. Introduce the project name: <strong>DzDataAutomate</strong>.</li>
+                        <li>State our tagline: "Data Science Automation, made for everyone".</li>
+                        <li>Briefly introduce the team and our supervisor structure, framed under Ministerial Order 1275 (diplôme-startup).</li>
+                        <li>Transition: Let's start with the core observation that motivated this work.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 2: The Problem (Hook) (Dark Theme) -->
+            <section class="slide" id="slide-2">
+                <div class="grid-2" style="height: 100%; align-items: center;">
+                    <div class="flex-col">
+                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 1rem;">The Hook</span>
+                        <h1>Data is Everywhere,<br>Accessibility <span class="highlight">is Not</span></h1>
+                        <p style="margin-bottom: 2rem; font-size: 1.1rem;">
+                            Algerian businesses, students, and NGOs collect data every single day — but almost none of them can extract value from it.
+                        </p>
+                        
+                        <div class="flex-col" style="gap: 1rem;">
+                            <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
+                                <h4 style="color:#fff; margin-bottom: 0.25rem;">The Paradox</h4>
+                                <p style="font-size: 0.85rem;">They possess the raw information assets, but lack the technical tools or consulting budget to interpret them.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-col flex-center">
+                        <!-- Glassmorphic Mockup of "Calculator / Technical barrier" from design inspiration -->
+                        <div class="glass-calc-wrapper">
+                            <div class="glass-calc">
+                                <div class="calc-screen">DATA ERROR: 403</div>
+                                <div class="calc-buttons">
+                                    <div class="calc-btn accent">Pandas</div>
+                                    <div class="calc-btn">Scikit</div>
+                                    <div class="calc-btn">NumPy</div>
+                                    <div class="calc-btn accent">Git</div>
+                                    <div class="calc-btn">AWS</div>
+                                    <div class="calc-btn accent">Docker</div>
+                                    <div class="calc-btn">SQL</div>
+                                    <div class="calc-btn">Vercel</div>
+                                    <div class="calc-btn accent">Ollama</div>
+                                    <div class="calc-btn">FastAPI</div>
+                                    <div class="calc-btn">Pip</div>
+                                    <div class="calc-btn accent">YAML</div>
+                                    <div class="calc-btn" style="grid-column: span 2;">Complex AutoML</div>
+                                    <div class="calc-btn accent" style="grid-column: span 2;">Consultant Cost</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="font-size: 0.75rem; margin-top: 1rem; color: var(--text-muted-dark); text-align: center;">
+                            The "Complexity Wall" separating business operators from data solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>Start with a story hook: "Algerian businesses, students, and NGOs collect data every day — but almost none of them can use it."</li>
+                        <li>Contrast three personas:
+                            <ul>
+                                <li>The boutique owner in Algiers tracking inventory on Excel.</li>
+                                <li>The NGO officer in Batna analyzing regional survey responses.</li>
+                                <li>The master's student trying to run statistical correlations.</li>
+                            </ul>
+                        </li>
+                        <li>They face a "complexity wall": either learn coding/data science, pay expensive consultants, or let data sit idle.</li>
+                        <li>Transition to the project idea.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 3: The Project Idea (Dark Theme) -->
+            <section class="slide" id="slide-3">
+                <div class="flex-col" style="height: 100%; justify-content: space-between;">
+                    <div>
+                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 0.5rem; display: block;">The Solution</span>
+                        <h1>DzDataAutomate</h1>
+                        <p style="max-width: 800px; margin-bottom: 2rem;">
+                            An intelligent web platform automating the full data science workflow. No installation, zero code, no setup. Users state their goals in plain business language, upload their files, and obtain actionable reports and reproducible code.
+                        </p>
+                    </div>
+
+                    <!-- Flow Diagram -->
+                    <div class="pipeline-flow">
+                        <div class="pipeline-node">
+                            <div class="node-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                            </div>
+                            <div class="node-title">1. Upload</div>
+                            <div class="node-subtitle">CSV / Excel files</div>
+                        </div>
+                        <div class="pipeline-connector"></div>
+                        <div class="pipeline-node">
+                            <div class="node-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                            </div>
+                            <div class="node-title">2. Clean</div>
+                            <div class="node-subtitle">Auto-deduplicate & impute</div>
+                        </div>
+                        <div class="pipeline-connector"></div>
+                        <div class="pipeline-node">
+                            <div class="node-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path></svg>
+                            </div>
+                            <div class="node-title">3. Visualize</div>
+                            <div class="node-subtitle">Interactive Plotly charts</div>
+                        </div>
+                        <div class="pipeline-connector"></div>
+                        <div class="pipeline-node">
+                            <div class="node-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                            </div>
+                            <div class="node-title">4. Understand</div>
+                            <div class="node-subtitle">Local AI suggestion card</div>
+                        </div>
+                        <div class="pipeline-connector"></div>
+                        <div class="pipeline-node">
+                            <div class="node-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            </div>
+                            <div class="node-title">5. Export</div>
+                            <div class="node-subtitle">PDF Report & Python code</div>
+                        </div>
+                    </div>
+
+                    <div class="grid-3" style="margin-top: 1rem; font-size: 0.8rem; text-align: center;">
+                        <div class="glass-card" style="padding: 1rem;">
+                            <strong>No Configuration Barrier</strong>
+                            No complex parameters, the engine automatically selects data processing pathways.
+                        </div>
+                        <div class="glass-card" style="padding: 1rem;">
+                            <strong>Open-Source Stack</strong>
+                            Built on top of Python, Pandas, Scikit-learn, and Plotly.
+                        </div>
+                        <div class="glass-card" style="padding: 1rem;">
+                            <strong>Dual Outputs</strong>
+                            Clean business presentation (PDF report) + raw developer assets (documented Python code).
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>Introduce <strong>DzDataAutomate</strong> as the solution: an intelligent web platform.</li>
+                        <li>No installation, no coding, no configurations needed.</li>
+                        <li>Walk through the 5-stage pipeline: Ingest -> Clean -> Visualize -> AI Suggestions -> Export.</li>
+                        <li>Emphasize the open-source backing: Python, Pandas, Scikit-learn, Plotly. It guarantees speed and transparency.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 4: Proposed Values (Dark Theme) -->
+            <section class="slide" id="slide-4">
+                <div class="flex-col" style="height: 100%;">
+                    <div>
+                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 0.5rem; display: block;">Strategic Advantages</span>
+                        <h1>Core Value Propositions</h1>
+                    </div>
+
+                    <div class="grid-3" style="flex: 1; align-items: center; gap: 2rem;">
+                        
+                        <!-- Cluster 1: Accessible & Affordable -->
+                        <div class="value-cluster">
+                            <h3>1. Accessible & <br><span class="highlight">Affordable</span></h3>
+                            <div class="flex-col" style="gap: 0.75rem;">
+                                <div class="value-card-mini">
+                                    <strong>Cost Reduction</strong>
+                                    Freemium entry model. Drastically cheaper than local consultancies.
+                                </div>
+                                <div class="value-card-mini">
+                                    <strong>Accessibility</strong>
+                                    Direct browser access, zero hardware configuration or installation.
+                                </div>
+                                <div class="value-card-mini">
+                                    <strong>Ease of Use</strong>
+                                    No prior training required. Linear step-by-step guidance.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cluster 2: Fast & Reliable -->
+                        <div class="value-cluster">
+                            <h3>2. Fast & <br><span class="highlight">Reliable</span></h3>
+                            <div class="flex-col" style="gap: 0.75rem;">
+                                <div class="value-card-mini">
+                                    <strong>High Performance</strong>
+                                    Pre-built Python algorithms execute complex pipeline calculations in seconds.
+                                </div>
+                                <div class="value-card-mini">
+                                    <strong>Flexibility</strong>
+                                    Select between fully automatic cleaning or guided step-by-step curation.
+                                </div>
+                                <div class="value-card-mini">
+                                    <strong>Risk Reduction</strong>
+                                    Sovereign data principles. Only statistical profiles reach LLM endpoints.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cluster 3: Private & User-Centered -->
+                        <div class="value-cluster">
+                            <h3>3. Private & <br><span class="highlight">User-Centered</span></h3>
+                            <div class="flex-col" style="gap: 0.75rem;">
+                                <div class="value-card-mini">
+                                    <strong>Modernity</strong>
+                                    Algeria's first dedicated AI-powered analysis platform built for local constraints.
+                                </div>
+                                <div class="value-card-mini">
+                                    <strong>Task Accomplishment</strong>
+                                    Direct transition from chaotic spreadsheet to executive-ready presentation.
+                                </div>
+                                <div class="value-card-mini">
+                                    <strong>User-Centered Design</strong>
+                                    Guided interaction mimicking an advisor conversation instead of software menus.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>Instead of listing all 9 values individually, group them into 3 thematic clusters for the jury:
+                            <ol>
+                                <li><strong>Accessible & Affordable:</strong> Targeting students and small retail operators who have zero budget.</li>
+                                <li><strong>Fast & Reliable:</strong> Underpinned by high-performance Python pipelines and risk mitigation.</li>
+                                <li><strong>Private & User-Centered:</strong> Adapting specifically to local market data constraints.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 5: Team & Objectives (Dark Theme) -->
+            <section class="slide" id="slide-5">
+                <div class="flex-col" style="height: 100%; justify-content: space-between;">
+                    <div>
+                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 0.5rem; display: block;">Team & Vision</span>
+                        <h1>Organizational Roadmap</h1>
+                    </div>
+
+                    <div class="grid-2" style="gap: 3rem; align-items: center;">
+                        <!-- Team grid -->
+                        <div class="flex-col" style="gap: 1rem;">
+                            <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Founding Responsibilities</h3>
+                            
+                            <div class="glass-card" style="padding: 1rem; display: flex; align-items: center; gap: 1rem;">
+                                <div style="background: rgba(57,255,20,0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--accent);">C</div>
+                                <div>
+                                    <strong style="color: #fff; font-size: 0.9rem;">Chikhi Mey Aya</strong>
+                                    <p style="font-size: 0.75rem;">Backend architecture, cleaning algorithms, and AI integration.</p>
+                                </div>
+                            </div>
+                            <div class="glass-card" style="padding: 1rem; display: flex; align-items: center; gap: 1rem;">
+                                <div style="background: rgba(57,255,20,0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--accent);">D</div>
+                                <div>
+                                    <strong style="color: #fff; font-size: 0.9rem;">Djouzi Nour El Houda</strong>
+                                    <p style="font-size: 0.75rem;">Frontend interface layouts, responsive styles, and navigation flows.</p>
+                                </div>
+                            </div>
+                            <div class="glass-card" style="padding: 1rem; display: flex; align-items: center; gap: 1rem;">
+                                <div style="background: rgba(57,255,20,0.1); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--accent);">B</div>
+                                <div>
+                                    <strong style="color: #fff; font-size: 0.9rem;">Benoudjit Lyne</strong>
+                                    <p style="font-size: 0.75rem;">ML integration, validation tests, and quality pipeline documentation.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Roadmap timeline -->
+                        <div class="flex-col">
+                            <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-bottom: 1rem;">Objectives Timeline</h3>
+                            <div class="milestone-timeline">
+                                <div class="milestone-item">
+                                    <div class="milestone-dot">Y1</div>
+                                    <div class="milestone-stat">100</div>
+                                    <div class="milestone-desc">Active academic / incubator pilot users.</div>
+                                </div>
+                                <div class="milestone-item">
+                                    <div class="milestone-dot">Y3</div>
+                                    <div class="milestone-stat">500</div>
+                                    <div class="milestone-desc">Paying SME clients & 3 university partnerships.</div>
+                                </div>
+                                <div class="milestone-item">
+                                    <div class="milestone-dot">Y5</div>
+                                    <div class="milestone-stat">15%</div>
+                                    <div class="milestone-desc">SME market share in Algeria; export to Tunisia/Morocco.</div>
+                                </div>
+                            </div>
+                            <p style="font-size: 0.75rem; color: var(--text-muted-dark); text-align: center; margin-top: 2rem;">
+                                Project scheduled across a 10-month prototype-to-thesis delivery timeline (Table 1).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>Introduce roles briefly: Mey Aya on backend algorithms, Nour El Houda on UI design/experience, Lyne on ML integration and pipeline documentation.</li>
+                        <li>Highlight the milestones:
+                            <ul>
+                                <li><strong>Year 1:</strong> Deploy prototype, secure 100 active academic/incubator pilot users.</li>
+                                <li><strong>Year 3:</strong> 500 paying SME clients, 3 active university integrations.</li>
+                                <li><strong>Year 5:</strong> Capture 15% of the Algerian SME analytics segment and target expansion to Morocco and Tunisia.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 6: What Makes This Innovative (Dark Theme) -->
+            <section class="slide" id="slide-6">
+                <div class="flex-col" style="height: 100%; justify-content: space-between;">
+                    <div>
+                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 0.5rem; display: block;">The Core Innovation</span>
+                        <h1>Where Lies the Innovation?</h1>
+                        <p style="color: var(--accent); font-weight: 600; font-size: 1.1rem; margin-bottom: 2rem;">
+                            "Not a new ML algorithm — a new way of delivering data science."
+                        </p>
+                    </div>
+
+                    <!-- 2x2 Innovation Quadrants -->
+                    <div class="grid-2x2">
+                        <div class="glass-card quadrant-card" style="border-top: 3px solid var(--accent);">
+                            <div class="quad-num">01</div>
+                            <h3>New Process</h3>
+                            <p style="font-size: 0.85rem;">Automating the entire 4-stage pipeline (exploratory, clean, model selection, visualization) in minutes instead of days of custom data-scientist scripts.</p>
+                        </div>
+                        <div class="glass-card quadrant-card" style="border-top: 3px solid var(--accent);">
+                            <div class="quad-num">02</div>
+                            <h3>New Functionality</h3>
+                            <p style="font-size: 0.85rem;">Intent-driven suggestion cards generated by local LLMs based on business sector rather than prompting users for complex SQL or parameter inputs.</p>
+                        </div>
+                        <div class="glass-card quadrant-card" style="border-top: 3px solid var(--accent);">
+                            <div class="quad-num">03</div>
+                            <h3>New Customers</h3>
+                            <p style="font-size: 0.85rem;">Reaching the non-technical majority (retailers, students, local NGOs) systematically excluded by enterprise software pricing and steep learning curves.</p>
+                        </div>
+                        <div class="glass-card quadrant-card" style="border-top: 3px solid var(--accent);">
+                            <div class="quad-num">04</div>
+                            <h3>New Offer</h3>
+                            <p style="font-size: 0.85rem;">Privacy-preserving, offline-compatible architecture. Data profile analysis is executed locally; raw records never leave the organizational perimeter.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>Clarify right away: We did not write a new statistical algorithm. The innovation is in <strong>architectural delivery</strong>.</li>
+                        <li>Go through the 2x2 grid:
+                            <ol>
+                                <li><strong>New Process:</strong> Automated pipeline.</li>
+                                <li><strong>New Functionality:</strong> Intent-driven suggestion cards.</li>
+                                <li><strong>New Customers:</strong> Serving the non-technical majority in Algeria.</li>
+                                <li><strong>New Offer:</strong> Privacy-preserving offline configuration using local LLMs.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 7: Core Innovation: Intent-Driven AI (Dark Theme) -->
+            <section class="slide" id="slide-7">
+                <div class="flex-col" style="height: 100%; justify-content: space-between;">
+                    <div>
+                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 0.5rem; display: block;">Functional Innovation</span>
+                        <h1>Intent-Driven AI Analysis</h1>
+                        <p style="max-width: 800px; margin-bottom: 2rem;">
+                            Instead of expecting users to formulate complex queries or write code, DzDataAutomate asks 2 simple questions (Data Type + Business Goal) and generates contextually relevant cards to click.
+                        </p>
+                    </div>
+
+                    <div class="flex-row" style="flex: 1; align-items: stretch;">
+                        
+                        <!-- Traditional tools -->
+                        <div class="compare-box">
+                            <div class="compare-title">Traditional Tools / Python Stack</div>
+                            <div class="compare-card traditional">
+                                <p style="color: #fff; font-weight: 600;">Requires code interpretation & data profiling knowledge:</p>
+                                <pre>
+import pandas as pd
+df = pd.read_csv("sales.csv")
+df.dropna(subset=["revenue"], inplace=True)
+correlation = df["promo"].corr(df["revenue"])
+# How to plot this? What parameters?
+# What if dates are messy?
+                                </pre>
+                                <p style="font-size: 0.75rem; margin-top: 1rem; color: #ef4444;">
+                                    Result: High friction. Non-technical users abandon the task.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- DzDataAutomate -->
+                        <div class="compare-box">
+                            <div class="compare-title">DzDataAutomate Approach</div>
+                            <div class="compare-card dz">
+                                <p style="color: #fff; font-weight: 600; margin-bottom: 0.5rem;">User states context: <strong>"Retail"</strong> + <strong>"Identify Growth"</strong>.</p>
+                                <p style="color: var(--accent); font-weight: 700; margin-bottom: 1rem;">Platform proposes clickable action cards:</p>
+                                
+                                <div class="flex-col" style="gap: 0.5rem;">
+                                    <div style="background: rgba(255,255,255,0.05); padding: 0.5rem; border-radius: 6px; border: 1px solid var(--accent); font-size: 0.8rem; color: #fff;">
+                                        👉 "Which product category generated the most revenue last quarter?"
+                                    </div>
+                                    <div style="background: rgba(255,255,255,0.02); padding: 0.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05); font-size: 0.8rem;">
+                                        👉 "Predict next month's sales based on historical trends."
+                                    </div>
+                                </div>
+
+                                <p style="font-size: 0.75rem; margin-top: 1rem; color: var(--accent);">
+                                    Result: Local LLM (via Ollama) maps metadata to pre-built scikit-learn models. No data leaks.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>This is our most distinctive slide. Explain the <strong>inversion of user experience</strong>.</li>
+                        <li>In traditional systems, the user must write scripts or configure chart parameters.</li>
+                        <li>With DzDataAutomate, the system scans structural characteristics and proposes clickable cards mapped to execution paths.</li>
+                        <li>Technical point: Local LLM executes on the client container using Ollama; raw data stays local. Falling back gracefully to heuristics if AI goes offline.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 8: Competitive Landscape (Dark Theme) -->
+            <section class="slide" id="slide-8">
+                <div class="flex-col" style="height: 100%; justify-content: space-between;">
+                    <div>
+                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 0.5rem; display: block;">Market Position</span>
+                        <h1>Competitive Landscape</h1>
+                        <p style="max-width: 800px;">
+                            International AutoML tools occupy the high-power/high-technicality segment. General visual tools lack predictive strength. DzDataAutomate bridges the accessibility gap.
+                        </p>
+                    </div>
+
+                    <div class="position-map">
+                        <!-- Map quadrants labels -->
+                        <div class="map-quadrant-label" style="top: 10px; right: 10px;">High Access / High Power (Gaps)</div>
+                        <div class="map-quadrant-label" style="top: 10px; left: 10px;">Low Access / High Power (Enterprise)</div>
+                        <div class="map-quadrant-label" style="bottom: 10px; left: 10px;">Low Access / Low Power (Niche)</div>
+                        <div class="map-quadrant-label" style="bottom: 10px; right: 10px;">High Access / Low Power (Reporting)</div>
+
+                        <!-- Axis labels -->
+                        <div class="axis-label axis-y">User Accessibility →</div>
+                        <div class="axis-label axis-x">Analytical Power / Predictive Depth →</div>
+
+                        <!-- Positioning Logos -->
+                        <div class="map-logo" style="bottom: 240px; left: 60px;">Google Vertex AI</div>
+                        <div class="map-logo" style="bottom: 200px; left: 80px;">DataRobot</div>
+                        <div class="map-logo" style="bottom: 150px; left: 150px;">KNIME / Orange</div>
+                        <div class="map-logo" style="bottom: 80px; left: 300px;">Power BI</div>
+                        <div class="map-logo" style="bottom: 40px; left: 20px;">Manual Excel & Consultants</div>
+                        
+                        <!-- DzDataAutomate Target Position -->
+                        <div class="map-logo highlight-brand" style="bottom: 220px; left: 380px;">DzDataAutomate</div>
+                    </div>
+
+                    <p style="font-size: 0.75rem; text-align: center; color: var(--text-muted-dark); margin-top: 1rem;">
+                        DzDataAutomate target positioning: high accessibility combined with full predictive pipeline power.
+                    </p>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>Direct the jury to Figure 2 (the competitive positioning map). It's a key slide showing our strategic positioning.</li>
+                        <li>Highlight that international giants like Google Vertex AI and DataRobot are far too complex and cloud-centric.</li>
+                        <li>Power BI is great for visualization but lacks out-of-the-box ML without Azure integrations.</li>
+                        <li>DzDataAutomate is uniquely positioned in the <strong>High Access / High Power</strong> quadrant for Algerian SMEs.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 9: Comparative Table & Market Gaps (Dark Theme) -->
+            <section class="slide" id="slide-9">
+                <div class="grid-2" style="height: 100%; gap: 3rem; align-items: center;">
+                    <div class="flex-col">
+                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 0.5rem; display: block;">Feature Matrix</span>
+                        <h1>Strategic Market Gaps</h1>
+                        
+                        <div class="flex-col" style="gap: 1rem; margin-top: 1.5rem;">
+                            <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
+                                <h4 style="color:#fff; margin-bottom: 0.25rem;">Gap 1: AutoML + Simplified UI</h4>
+                                <p style="font-size: 0.8rem;">No platform combines advanced scikit-learn AutoML with a zero-code interface tailored for localized language use.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
+                                <h4 style="color:#fff; margin-bottom: 0.25rem;">Gap 2: Sovereign Local AI</h4>
+                                <p style="font-size: 0.8rem;">All modern visual LLM wrappers stream user files to foreign servers. DzDataAutomate runs AI models fully locally via Ollama.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
+                                <h4 style="color:#fff; margin-bottom: 0.25rem;">Gap 3: Prohibitive Enterprise Costs</h4>
+                                <p style="font-size: 0.8rem;">Licensing costs for enterprise data science tools completely shut out local SMEs. DzDataAutomate delivers freemium access.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-col">
+                        <!-- Comparative Table -->
+                        <table class="sleek-table">
+                            <thead>
+                                <tr>
+                                    <th>Criterion</th>
+                                    <th>Competitors</th>
+                                    <th class="highlight-col">DzDataAutomate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Non-technical accessibility</td>
+                                    <td>Low — Medium</td>
+                                    <td class="highlight-col">High (No code)</td>
+                                </tr>
+                                <tr>
+                                    <td>Natural language interaction</td>
+                                    <td>Partial / None</td>
+                                    <td class="highlight-col">Full (Local LLM)</td>
+                                </tr>
+                                <tr>
+                                    <td>Internet dependency</td>
+                                    <td>Required (Cloud)</td>
+                                    <td class="highlight-col">None (Core pipeline)</td>
+                                </tr>
+                                <tr>
+                                    <td>Sovereign data privacy</td>
+                                    <td>Moderate / Low</td>
+                                    <td class="highlight-col">High (Local run)</td>
+                                </tr>
+                                <tr>
+                                    <td>Subscription cost</td>
+                                    <td>High — Extreme</td>
+                                    <td class="highlight-col">Low (500 DZD/mo)</td>
+                                </tr>
+                                <tr>
+                                    <td>Algerian market adaptation</td>
+                                    <td>None</td>
+                                    <td class="highlight-col">High (Local integration)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>Present Table 2 in a highly readable format. Highlight that the proposed platform has high adaptation to the local context.</li>
+                        <li>Outline the three major market gaps:
+                            <ol>
+                                <li>The lack of AutoML combined with a simplified UI.</li>
+                                <li>The lack of data sovereignty options.</li>
+                                <li>Cost structures that exclude the local economic fabric.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 10: How the Platform Works (Dark Theme) -->
+            <section class="slide" id="slide-10">
+                <div class="flex-col" style="height: 100%; justify-content: space-between;">
+                    <div>
+                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 0.5rem; display: block;">Production Pipeline</span>
+                        <h1>Service Delivery Architecture</h1>
+                        <p style="max-width: 800px; margin-bottom: 2rem;">
+                            Step-by-step description of how the system processes data. Designed to run automatically while providing step-by-step control mechanisms.
+                        </p>
+                    </div>
+
+                    <!-- Simplified Figure 3 -->
+                    <div class="grid-3" style="gap: 1.5rem; margin-bottom: 2rem;">
+                        <div class="glass-card" style="padding: 1.25rem; border-top: 3px solid var(--accent);">
+                            <h4 style="color: #fff; margin-bottom: 0.5rem;">1. Capture & Upload</h4>
+                            <p style="font-size: 0.8rem; line-height: 1.4;">
+                                Intent profiles capture domain context (Sales, HR, etc.). User uploads CSV/Excel. Instant metadata scanning builds a structural "Data Passport".
+                            </p>
+                        </div>
+                        <div class="glass-card" style="padding: 1.25rem; border-top: 3px solid var(--accent);">
+                            <h4 style="color: #fff; margin-bottom: 0.5rem;">2. Clean & Preprocess</h4>
+                            <p style="font-size: 0.8rem; line-height: 1.4;">
+                                Duplicates are dropped. Missing values are filled (median/mode). Outliers are flagged. Standardized dates. Raw tables cleaned under automatic or guided mode.
+                            </p>
+                        </div>
+                        <div class="glass-card" style="padding: 1.25rem; border-top: 3px solid var(--accent);">
+                            <h4 style="color: #fff; margin-bottom: 0.5rem;">3. Intelligent Suggestion</h4>
+                            <p style="font-size: 0.8rem; line-height: 1.4;">
+                                Non-sensitive metadata profiles (column stats, types) are sent to a local LLM. The AI generates context-specific suggestion cards (e.g. sales trends).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card" style="background: rgba(57,255,20,0.03); border-color: rgba(57,255,20,0.2); display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            <span style="font-weight: 600; font-size: 0.9rem;">Privacy Guarantee:</span>
+                            <span style="font-size: 0.85rem; color: var(--text-muted-dark);">Raw data records never leave the local browser/container environment. Only statistical aggregations are processed.</span>
+                        </div>
+                        <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent); text-transform: uppercase;">100% Sovereign</span>
+                    </div>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>Walk through the service delivery architecture (Figure 3 in the memoire).</li>
+                        <li>Explain that users upload a dataset, which goes through deterministic cleaning (duplicates, missing value imputation, dates).</li>
+                        <li>Point out the privacy seal: <strong>Raw data never leaves the user's device</strong>; only metadata profiles are sent to the local LLM.</li>
+                        <li>Transition to infrastructure and key partners.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 11: Infrastructure & Key Partners (Dark Theme) -->
+            <section class="slide" id="slide-11">
+                <div class="flex-col" style="height: 100%; justify-content: space-between;">
+                    <div>
+                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 0.5rem; display: block;">Infrastructure</span>
+                        <h1>Technical Architecture & Partners</h1>
+                        <p style="max-width: 800px; margin-bottom: 2rem;">
+                            Zero-cost hosting during the prototype phase allows high-margin operations. Built on robust local and international networks.
+                        </p>
+                    </div>
+
+                    <div class="grid-2" style="gap: 3rem; align-items: center; flex: 1;">
+                        <!-- Tech stack -->
+                        <div class="flex-col" style="gap: 1rem;">
+                            <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Supply & Stack</h3>
+                            
+                            <div class="grid-2" style="gap: 1rem; max-height: 180px;">
+                                <div class="glass-card" style="padding: 1rem; text-align: center;">
+                                    <strong style="color: var(--accent); display: block; font-size: 1.1rem; margin-bottom: 0.25rem;">React</strong>
+                                    <p style="font-size: 0.75rem;">Frontend framework (Hosted on Vercel Free Tier)</p>
+                                </div>
+                                <div class="glass-card" style="padding: 1rem; text-align: center;">
+                                    <strong style="color: var(--accent); display: block; font-size: 1.1rem; margin-bottom: 0.25rem;">FastAPI</strong>
+                                    <p style="font-size: 0.75rem;">ML core API (Hosted on Render Free Tier)</p>
+                                </div>
+                                <div class="glass-card" style="padding: 1rem; text-align: center;">
+                                    <strong style="color: var(--accent); display: block; font-size: 1.1rem; margin-bottom: 0.25rem;">Ollama</strong>
+                                    <p style="font-size: 0.75rem;">Local LLM container processing metadata</p>
+                                </div>
+                                <div class="glass-card" style="padding: 1rem; text-align: center;">
+                                    <strong style="color: var(--accent); display: block; font-size: 1.1rem; margin-bottom: 0.25rem;">Chargily</strong>
+                                    <p style="font-size: 0.75rem;">Algerian gateway for CIB & Dahabia card payments</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Key partners -->
+                        <div class="flex-col" style="gap: 1rem;">
+                            <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Strategic Partners</h3>
+                            
+                            <div class="glass-card" style="padding: 1rem; border-left: 2px solid var(--accent);">
+                                <strong style="color:#fff; font-size: 0.9rem;">CNESIIU & University Incubators</strong>
+                                <p style="font-size: 0.8rem; margin-top: 0.25rem;">Provides institutional framework, physical workspaces, and direct access to early student tester pools.</p>
+                            </div>
+                            <div class="glass-card" style="padding: 1rem; border-left: 2px solid var(--accent);">
+                                <strong style="color:#fff; font-size: 0.9rem;">Local SMEs (agri-food, retail, services)</strong>
+                                <p style="font-size: 0.8rem; margin-top: 0.25rem;">Beta testers providing real-world datasets in exchange for priority access and case studies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>Present the technology stack: React for UI hosted on Vercel, FastAPI backend on Render, Ollama for local LLM suggestions, and Chargily for payment processing.</li>
+                        <li>Highlight that we utilize free tiers and open-source models to keep server overhead at $0 during the prototype phase.</li>
+                        <li>Partnerships: CNESIIU / university incubator structure gives us structural validation and target student users; local SMEs provide real-world testing data.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 12: Cost Structure & Financing (Dark Theme) -->
+            <section class="slide" id="slide-12">
+                <div class="grid-2" style="height: 100%; gap: 3rem; align-items: center;">
+                    <div class="flex-col">
+                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 0.5rem; display: block;">Financial Plan</span>
+                        <h1>Year 1 Cost Structure</h1>
+                        <p style="margin-bottom: 2rem;">
+                            The platform benefits from an extremely low initial operational footprint. Over 50% of the Year 1 budget goes into outreach and university workshops.
+                        </p>
+                        
+                        <div class="glass-card" style="padding: 1.5rem; text-align: center; border-left: 4px solid var(--accent);">
+                            <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted-dark);">Total Estimated Budget</span>
+                            <div style="font-family: 'Syne', sans-serif; font-size: 3rem; font-weight: 800; color: #fff; margin: 0.5rem 0;">
+                                104,000 <span style="color: var(--accent);">DZD</span>
+                            </div>
+                            <p style="font-size: 0.85rem;">Financed entirely via university incubator support & cloud startup credits.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-row" style="gap: 2rem;">
+                        <!-- SVG Donut Chart -->
+                        <div class="chart-container" style="flex: 1.2;">
+                            <svg class="chart-svg" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="8" />
+                                <!-- VPS Hosting (29%) -->
+                                <circle class="donut-segment" cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="8" stroke-dasharray="283" stroke-dashoffset="0" data-percent="29" style="transform: rotate(-90deg);" />
+                                <!-- Workshops (29%) -->
+                                <circle class="donut-segment" cx="50" cy="50" r="45" fill="none" stroke="var(--accent-dark)" stroke-width="8" stroke-dasharray="283" stroke-dashoffset="0" data-percent="29" style="transform: rotate(14.4deg);" />
+                                <!-- API Usage (11.5%) -->
+                                <circle class="donut-segment" cx="50" cy="50" r="45" fill="none" stroke="#fff" stroke-width="8" stroke-dasharray="283" stroke-dashoffset="0" data-percent="11.5" style="transform: rotate(118.8deg);" />
+                                <!-- Marketing (9.6%) -->
+                                <circle class="donut-segment" cx="50" cy="50" r="45" fill="none" stroke="#475569" stroke-width="8" stroke-dasharray="283" stroke-dashoffset="0" data-percent="9.6" style="transform: rotate(160.2deg);" />
+                                <!-- Miscellaneous (20.9%) -->
+                                <circle class="donut-segment" cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="8" stroke-dasharray="283" stroke-dashoffset="0" data-percent="20.9" style="transform: rotate(194.7deg);" />
+                                
+                                <text x="50" y="52" text-anchor="middle" font-family="'Syne', sans-serif" font-weight="800" font-size="9" fill="#fff">Y1 COSTS</text>
+                            </svg>
+                        </div>
+                        
+                        <!-- Legend -->
+                        <div class="chart-legend" style="flex: 1.5;">
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: var(--accent);"></div>
+                                <span class="legend-text">VPS Server Hosting</span>
+                                <span class="legend-val">30K DZD</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: var(--accent-dark);"></div>
+                                <span class="legend-text">University Workshops</span>
+                                <span class="legend-val">30K DZD</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: #fff;"></div>
+                                <span class="legend-text">AI API Tokens</span>
+                                <span class="legend-val">12K DZD</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: #475569;"></div>
+                                <span class="legend-text">Social Media Ads</span>
+                                <span class="legend-val">10K DZD</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: rgba(255,255,255,0.2);"></div>
+                                <span class="legend-text">Other (Gateway, tools)</span>
+                                <span class="legend-val">22K DZD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>Direct attention to Slide 12 (Year 1 Budget). The total estimated budget is <strong>104,000 DZD</strong> (Table 3).</li>
+                        <li>Highlight that we operate with a low capital requirement. No salaries or licensing costs are factored in during development.</li>
+                        <li>Server costs (30K DZD post-launch) and marketing/workshops (30K DZD + 10K DZD) constitute the largest components.</li>
+                        <li>Transition to revenue models and path to profitability.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 13: Revenue & Path to Profitability (Dark Theme) -->
+            <section class="slide" id="slide-13">
+                <div class="grid-2" style="height: 100%; gap: 3rem; align-items: center;">
+                    <div class="flex-col" style="justify-content: center;">
+                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 0.5rem; display: block;">Financial Outlook</span>
+                        <h1>Profitability Projections</h1>
+                        <p style="margin-bottom: 1.5rem;">
+                            Our revenue relies on a freemium SaaS model (Free tier for basic tasks, <strong>500 DZD/month</strong> subscription for full predictive outputs + PDF export).
+                        </p>
+                        
+                        <div class="flex-col" style="gap: 0.75rem;">
+                            <div class="glass-card" style="padding: 1rem; border-left: 2px solid var(--accent); display: flex; justify-content: space-between;">
+                                <span>Monthly Breakeven</span>
+                                <strong>Month 4</strong>
+                            </div>
+                            <div class="glass-card" style="padding: 1rem; border-left: 2px solid var(--accent); display: flex; justify-content: space-between;">
+                                <span>Cumulative Cash Positive</span>
+                                <strong>Month 8 (+188K surplus Y1)</strong>
+                            </div>
+                            <div class="glass-card" style="padding: 1rem; border-left: 2px solid var(--accent); display: flex; justify-content: space-between;">
+                                <span>Working Capital Requirement (BFR)</span>
+                                <strong>≈ 0 DZD (Pay-before-use)</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-col">
+                        <h4 style="color: #fff; margin-bottom: 0.5rem; text-align: center;">5-Year Subscription Growth Trajectory</h4>
+                        <!-- SVG Line Chart -->
+                        <div class="chart-container">
+                            <svg class="chart-svg" viewBox="0 0 200 100" style="overflow: visible;">
+                                <!-- Grid Lines -->
+                                <line x1="20" y1="10" x2="190" y2="10" stroke="rgba(255,255,255,0.05)" stroke-width="0.5" />
+                                <line x1="20" y1="30" x2="190" y2="30" stroke="rgba(255,255,255,0.05)" stroke-width="0.5" />
+                                <line x1="20" y1="50" x2="190" y2="50" stroke="rgba(255,255,255,0.05)" stroke-width="0.5" />
+                                <line x1="20" y1="70" x2="190" y2="70" stroke="rgba(255,255,255,0.05)" stroke-width="0.5" />
+                                <line x1="20" y1="90" x2="190" y2="90" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+                                
+                                <!-- Axes labels -->
+                                <text x="18" y="93" fill="var(--text-muted-dark)" font-size="5" text-anchor="end">0</text>
+                                <text x="18" y="53" fill="var(--text-muted-dark)" font-size="5" text-anchor="end">5k</text>
+                                <text x="18" y="13" fill="var(--text-muted-dark)" font-size="5" text-anchor="end">15k</text>
+                                
+                                <text x="20" y="97" fill="var(--text-muted-dark)" font-size="5" text-anchor="middle">Year N</text>
+                                <text x="62.5" y="97" fill="var(--text-muted-dark)" font-size="5" text-anchor="middle">N+1</text>
+                                <text x="105" y="97" fill="var(--text-muted-dark)" font-size="5" text-anchor="middle">N+2</text>
+                                <text x="147.5" y="97" fill="var(--text-muted-dark)" font-size="5" text-anchor="middle">N+3</text>
+                                <text x="190" y="97" fill="var(--text-muted-dark)" font-size="5" text-anchor="middle">N+5</text>
+
+                                <!-- Line 1 (Optimistic scenario: 600 -> 2400 -> 4800 -> 8400 -> 16800) -->
+                                <path class="line-chart-path" d="M 20 86.8 L 62.5 77.2 L 105 67.6 L 147.5 53.2 L 190 20" fill="none" stroke="var(--accent)" stroke-width="2.5" />
+                                <!-- Points Optimistic -->
+                                <circle cx="20" cy="86.8" r="2" fill="var(--accent)" />
+                                <circle cx="62.5" cy="77.2" r="2" fill="var(--accent)" />
+                                <circle cx="105" cy="67.6" r="2" fill="var(--accent)" />
+                                <circle cx="147.5" cy="53.2" r="2" fill="var(--accent)" />
+                                <circle cx="190" cy="20" r="3" fill="var(--accent)" />
+                                
+                                <!-- Line 2 (Pessimistic scenario: 180 -> 600 -> 1440 -> 3000 -> 7200) -->
+                                <path class="line-chart-path" d="M 20 89.2 L 62.5 86.8 L 105 82.5 L 147.5 74 L 190 53.2" fill="none" stroke="#ef4444" stroke-dasharray="2,2" stroke-width="1.5" />
+                                <!-- Points Pessimistic -->
+                                <circle cx="20" cy="89.2" r="1.5" fill="#ef4444" />
+                                <circle cx="62.5" cy="86.8" r="1.5" fill="#ef4444" />
+                                <circle cx="105" cy="82.5" r="1.5" fill="#ef4444" />
+                                <circle cx="147.5" cy="74" r="1.5" fill="#ef4444" />
+                                <circle cx="190" cy="53.2" r="2" fill="#ef4444" />
+                                
+                                <text x="185" y="15" fill="var(--accent)" font-size="5" font-weight="700" text-anchor="end">Optimistic: 16.8K subs</text>
+                                <text x="185" y="47" fill="#ef4444" font-size="5" font-weight="700" text-anchor="end">Pessimistic: 7.2K subs</text>
+                            </svg>
+                        </div>
+                        <p style="font-size: 0.7rem; color: var(--text-muted-dark); text-align: center; margin-top: 0.5rem;">
+                            Projections based on the 5-year financial planning curves (Table 4 & 5).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>Discuss the freemium model. Paid subscription is <strong>500 DZD per month</strong>.</li>
+                        <li>Highlight subscription projections:
+                            <ul>
+                                <li>Optimistic (solid green): year N starts at 600, growing to 16.8k by year N+5.</li>
+                                <li>Pessimistic (dashed red): starts at 180, reaching 7.2k by year N+5.</li>
+                            </ul>
+                        </li>
+                        <li>Under both scenarios, unit economics are extremely positive. Marginal cost per user is near-zero.</li>
+                        <li>BFR (Working capital) is near 0 DZD. Subscriptions are paid upfront.</li>
+                        <li>Transition to the prototype walkthrough.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 14: Walkthrough 1: Capture & Clean (Dark Theme) -->
+            <section class="slide" id="slide-14">
+                <div class="grid-2" style="height: 100%; gap: 3rem; align-items: center;">
+                    <div class="flex-col">
+                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 0.5rem; display: block;">Prototype Demo - Part 1</span>
+                        <h1>Ingestion & Curation</h1>
+                        <p style="margin-bottom: 1.5rem;">
+                            Live mockup representing the execution of Stages 1 and 2 in the platform (Figures 4, 5, 6, 7).
+                        </p>
+                        
+                        <div class="flex-col" style="gap: 1rem;">
+                            <div class="glass-card" style="padding: 1rem; border-left: 2px solid var(--accent);">
+                                <h4 style="color: #fff; margin-bottom: 0.25rem;">Data Passport (Stage 1)</h4>
+                                <p style="font-size: 0.8rem;">Automatic parsing scans structural shape. Prompts warnings when formatting errors are detected (e.g. 14% date format inconsistencies).</p>
+                            </div>
+                            <div class="glass-card" style="padding: 1rem; border-left: 2px solid var(--accent);">
+                                <h4 style="color: #fff; margin-bottom: 0.25rem;">Data Cleaning Report (Stage 2)</h4>
+                                <p style="font-size: 0.8rem;">Users choose between 1-click automatic cleaning or step-by-step decision cards (e.g. "We found 142k duplicates. Remove all?").</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-col" style="height: 100%; max-height: 380px;">
+                        <!-- Mockup dashboard interface -->
+                        <div class="mockup-screen">
+                            <div class="mockup-header">
+                                <div class="mockup-dot red"></div>
+                                <div class="mockup-dot yellow"></div>
+                                <div class="mockup-dot green"></div>
+                                <div class="mockup-title-bar">DzDataAutomate // Clean Panel</div>
+                            </div>
+                            <div class="mockup-body flex-col" style="gap: 0.75rem;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">
+                                    <span style="font-weight: 700; color: #fff;">File: sales_Q3_2024.csv</span>
+                                    <span style="color: var(--accent); background: rgba(57,255,20,0.1); padding: 0.1rem 0.5rem; border-radius: 4px;">Data Passport Verified</span>
+                                </div>
+                                <div class="grid-3" style="text-align: center; gap: 0.5rem;">
+                                    <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); padding: 0.4rem; border-radius: 6px;">
+                                        <div style="font-weight: 700; color:#fff;">2,450</div>
+                                        <div style="font-size: 0.6rem; color: var(--text-muted-dark);">Rows</div>
+                                    </div>
+                                    <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); padding: 0.4rem; border-radius: 6px;">
+                                        <div style="font-weight: 700; color:#fff;">8</div>
+                                        <div style="font-size: 0.6rem; color: var(--text-muted-dark);">Columns</div>
+                                    </div>
+                                    <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border); padding: 0.4rem; border-radius: 6px;">
+                                        <div style="font-weight: 700; color: var(--accent);">98.4%</div>
+                                        <div style="font-size: 0.6rem; color: var(--text-muted-dark);">Quality Index</div>
+                                    </div>
+                                </div>
+                                
+                                <div style="font-weight: 700; color: #fff; margin-top: 0.25rem;">Detected Integrity Flags:</div>
+                                <div class="flex-col" style="gap: 0.4rem;">
+                                    <div style="background: rgba(239,68,68,0.05); border: 1px solid rgba(239,68,68,0.2); padding: 0.4rem; border-radius: 6px; display: flex; justify-content: space-between; align-items: center;">
+                                        <span>⚠️ 142k duplicate rows (Identifier)</span>
+                                        <button style="background: #ef4444; border: none; color:#fff; font-size: 0.6rem; padding: 0.2rem 0.4rem; border-radius: 4px; cursor: pointer;">Remove All</button>
+                                    </div>
+                                    <div style="background: rgba(245,158,11,0.05); border: 1px solid rgba(245,158,11,0.2); padding: 0.4rem; border-radius: 6px; display: flex; justify-content: space-between; align-items: center;">
+                                        <span>⚠️ Inconsistent date formats (14% of rows)</span>
+                                        <button style="background: var(--accent); border: none; color:#000; font-size: 0.6rem; font-weight: 700; padding: 0.2rem 0.4rem; border-radius: 4px; cursor: pointer;">Standardize</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>Guide the jury through the prototype dashboard walkthrough (Chapter 6).</li>
+                        <li>Show Slide 14: This mimics Screens 1, 2, 3, and 4 (Sign-up, Dashboard, Data Passport, and cleaning report).</li>
+                        <li>Explain the Data Passport scanning step: it parses rows and columns instantly.</li>
+                        <li>Point to the warning card: Outlying elements or format irregularities (like the 14% date format issue) are surfaced with a one-click correction path.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 15: Walkthrough 2: Visualize & Understand (Dark Theme) -->
+            <section class="slide" id="slide-15">
+                <div class="grid-2" style="height: 100%; gap: 3rem; align-items: center;">
+                    <div class="flex-col">
+                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 0.5rem; display: block;">Prototype Demo - Part 2</span>
+                        <h1>Insights & Actions</h1>
+                        <p style="margin-bottom: 1.5rem;">
+                            Live mockup representing the execution of Stages 3 and 4 in the platform (Figures 8, 9, 10).
+                        </p>
+                        
+                        <div class="flex-col" style="gap: 1rem;">
+                            <div class="glass-card" style="padding: 1rem; border-left: 2px solid var(--accent);">
+                                <h4 style="color: #fff; margin-bottom: 0.25rem;">Live Plotly Configurator (Stage 3)</h4>
+                                <p style="font-size: 0.8rem;">Cleaned column names map to x/y selectors. System suggests chart drill-downs (e.g. "We detected correlation in Food sales").</p>
+                            </div>
+                            <div class="glass-card" style="padding: 1rem; border-left: 2px solid var(--accent);">
+                                <h4 style="color: #fff; margin-bottom: 0.25rem;">Nova Strategic Core (Stage 4)</h4>
+                                <p style="font-size: 0.8rem;">Local LLM provides strategic summaries (e.g. "14% latency increase identified in West region"). Includes natural-language follow-up question box.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-col" style="height: 100%; max-height: 380px;">
+                        <!-- Mockup dashboard interface -->
+                        <div class="mockup-screen">
+                            <div class="mockup-header">
+                                <div class="mockup-dot red"></div>
+                                <div class="mockup-dot yellow"></div>
+                                <div class="mockup-dot green"></div>
+                                <div class="mockup-title-bar">DzDataAutomate // Nova Strategic Core</div>
+                            </div>
+                            <div class="mockup-body flex-col" style="gap: 0.5rem; justify-content: space-between;">
+                                
+                                <div class="glass-card" style="padding: 0.75rem; background: rgba(57,255,20,0.02); border-color: rgba(57,255,20,0.2);">
+                                    <div style="font-weight: 700; color: var(--accent); font-size: 0.8rem; margin-bottom: 0.25rem;">AI Strategic Insight (Local Ollama LLM):</div>
+                                    <p style="font-size: 0.7rem; color: #fff;">
+                                        "A 14% latency increase has been detected in the West region distribution cluster. This correlates with a spike in unoptimized categorical transactions. Recommend executing re-routing pipeline."
+                                    </p>
+                                    <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+                                        <button style="background: var(--accent); border: none; color: #000; font-size: 0.6rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 4px; cursor: pointer;">Execute Patch</button>
+                                        <button style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); color: #fff; font-size: 0.6rem; padding: 0.2rem 0.5rem; border-radius: 4px; cursor: pointer;">Simulate Only</button>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; align-items: center; background: rgba(0,0,0,0.4); border: 1px solid var(--glass-border); border-radius: 8px; padding: 0.4rem 0.8rem; margin-top: 0.5rem;">
+                                    <input type="text" placeholder="Ask follow-up questions about this dataset..." style="flex:1; background: none; border: none; outline: none; font-size: 0.7rem; color:#fff;" disabled>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                </div>
+                                
+                                <div class="grid-3" style="text-align: center; gap: 0.5rem; margin-top: 0.25rem;">
+                                    <div style="background: rgba(57,255,20,0.05); border: 1px solid rgba(57,255,20,0.2); padding: 0.3rem; border-radius: 4px; color: var(--accent); font-size: 0.6rem; font-weight: 700; cursor: pointer;">⬇️ PDF Report</div>
+                                    <div style="background: rgba(57,255,20,0.05); border: 1px solid rgba(57,255,20,0.2); padding: 0.3rem; border-radius: 4px; color: var(--accent); font-size: 0.6rem; font-weight: 700; cursor: pointer;">⬇️ Clean CSV</div>
+                                    <div style="background: rgba(57,255,20,0.05); border: 1px solid rgba(57,255,20,0.2); padding: 0.3rem; border-radius: 4px; color: var(--accent); font-size: 0.6rem; font-weight: 700; cursor: pointer;">⬇️ Jupyter Notebook</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>Present Slide 15: This walkthrough represents Screens 5, 6, and 7 (Visualization, AI insights, and final export).</li>
+                        <li>Highlight the Nova Strategic Core: The AI parses metadata and returns domain-specific alerts (such as the 14% latency alert).</li>
+                        <li>Show the export options:
+                            <ul>
+                                <li>The executive PDF report.</li>
+                                <li>The cleaned CSV file.</li>
+                                <li>The reproducible Jupyter Notebook (Python script) to allow advanced users to replicate the exact steps.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- SLIDE 16: Conclusion & Vision (Light Theme) -->
+            <section class="slide light-theme" id="slide-16">
+                <div class="flex-col" style="height: 100%; justify-content: center; position: relative;">
+                    <div>
+                        <span style="font-size: 0.9rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-dark); background: rgba(57, 255, 20, 0.1); padding: 0.4rem 1rem; border-radius: 20px;">
+                            Conclusion & Future Vision
+                        </span>
+                    </div>
+
+                    <h1 style="font-size: 3rem; margin-top: 1.5rem; margin-bottom: 2rem; color: var(--bg-dark);">
+                        Democratizing Data Science <br>across the <span style="color: var(--accent-dark);">Algerian Market</span>
+                    </h1>
+
+                    <div class="grid-3" style="gap: 2rem; margin-bottom: 3rem;">
+                        <div class="glass-card" style="padding: 1.5rem;">
+                            <strong style="color: var(--bg-dark); font-size: 1.1rem; display: block; margin-bottom: 0.5rem;">Technically Sound</strong>
+                            Automated pipeline fully executed and validated using representative domestic datasets.
+                        </div>
+                        <div class="glass-card" style="padding: 1.5rem;">
+                            <strong style="color: var(--bg-dark); font-size: 1.1rem; display: block; margin-bottom: 0.5rem;">Strategically Defensible</strong>
+                            Adapting to key national constraints (data sovereignty, internet coverage, pricing blocks).
+                        </div>
+                        <div class="glass-card" style="padding: 1.5rem;">
+                            <strong style="color: var(--bg-dark); font-size: 1.1rem; display: block; margin-bottom: 0.5rem;">Financially Viable</strong>
+                            Zero initial server liabilities, cash positive by month 8 under conservative forecasts.
+                        </div>
+                    </div>
+
+                    <div style="border-left: 4px solid var(--accent-dark); padding-left: 1.5rem; max-width: 800px;">
+                        <p style="font-size: 1.15rem; color: var(--bg-dark); font-weight: 600; line-height: 1.5;">
+                            "To establish a locally developed platform as the reference solution for data-driven decision-making in Algeria and the broader North African region."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="speaker-notes">
+                    <ul>
+                        <li>Recap the three foundations of our defense:
+                            <ul>
+                                <li><strong>Technically sound:</strong> Core pipeline tested and verified.</li>
+                                <li><strong>Strategically defensible:</strong> Resolving key domestic blockers (confidentiality, cost).</li>
+                                <li><strong>Financially viable:</strong> Breakeven in year 1.</li>
+                            </ul>
+                        </li>
+                        <li>Highlight future directions: integration of clustering/time-series, Arabic-language localization, and formalizing incubator partnerships.</li>
+                        <li>Close the defense: "Thank you for your attention. We are ready to take your questions."</li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer Control Overlay -->
+        <footer class="footer-overlay">
+            <div>
+                <strong>DzDataAutomate</strong> — Jury Defense Presentation
+            </div>
+            
+            <div class="slide-controls">
+                <button class="control-btn prev" title="Previous Slide (Left Arrow)">◀</button>
+                <div class="progress-bar-container">
+                    <div class="progress-bar-fill"></div>
+                </div>
+                <span style="font-weight: 600; min-width: 45px; text-align: center;">
+                    <span class="current-slide-num">1</span> / <span class="total-slides-num">16</span>
+                </span>
+                <button class="control-btn next" title="Next Slide (Right Arrow/Space)">▶</button>
+                <button class="control-btn notes" title="Speaker Notes (N)" style="margin-left: 0.5rem; font-weight: bold;">N</button>
+            </div>
+            
+            <div>
+                ESTIN • 2025/2026
+            </div>
+        </footer>
+
+        <!-- Presenter Speaker Notes Drawer -->
+        <div class="presenter-notes-panel">
+            <div class="notes-header">
+                <div class="notes-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    SPEAKER NOTES
+                </div>
+                <button class="notes-close" title="Close Panel">✕</button>
+            </div>
+            <div class="notes-content">
+                <!-- Loaded dynamically via JS -->
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

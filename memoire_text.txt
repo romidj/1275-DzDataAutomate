@@ -1,0 +1,1367 @@
+--- PAGE 1 ---
+People’s Democratic Republic of Algeria
+ﺍ
+Ministry of Higher Education and Scientific Research
+ﻭﺯﺍﺭﺓﺍڤ׫֔ڪ߈ߣﺍڤ֔ 
+Higher School of Computer Science, Digital Technologies, and Informatics
+ﺍ
+Final-year dissertation submitted in partial fulfillment of the requirements
+for the degree
+(certificate) – economic enterprise project
+Specialization :
+AI and DS
+Presented by :
+Benoudjit Lyne
+Chikhi Mey Aya
+Djouzi Nour El Houda
+Data Science Automation : DzDataAutomate
+Supervised by :
+Dr. Benslimane Salim
+ESTIN
+Co-supervised by:
+Dr. Amara Karima
+ESTIN
+Jury members :
+MCB – Dr. Ghazali Fatah
+full
+President ESTIN
+MCB – Dr. LAHSAINI Ilyas
+full
+Examiner ESTIN
+MCB – Dr. Bouredja Sara
+full
+Examiner ESTIN
+MCB – Dr. Azazga Imene
+full
+Incubator
+representative ESTIN
+Academic year : 2025/2026
+
+--- PAGE 2 ---
+Contents
+Introduction 6
+1 Project Presentation 7
+1.1 The Project Idea (Proposed Solution) . . . . . . . . . . . . . . . . . . . . . . . . . 8
+1.2 Proposed V alues . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+1.3 Project Team . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+1.4 Project Objectives . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+1.5 Project Timeline . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+2 Innovative Aspect 11
+2.1 Nature of Innovation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+2.2 Innovation Domains . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+2.2.1 New Processes: Automating the Data Science Workflow . . . . . . . . . . 12
+2.2.2 New Functionalities: Intent-Driven Analysis via AI Suggestion Cards . . . 12
+2.2.3 New Customers: Reaching the Non-Technical Majority . . . . . . . . . . . 13
+2.2.4 New Offers: A Privacy-Preserving, Offline-Compatible Analysis Platform 14
+3 Strategic Market Analysis 15
+3.1 Identification of Competitors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3.1.1 International Competitors . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3.1.2 National Competitors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3.2 Comparative Analysis of Existing Solutions . . . . . . . . . . . . . . . . . . . . . 16
+3.3 Assessment of the Intensity of Competition . . . . . . . . . . . . . . . . . . . . . 17
+3.3.1 At the International Level . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+3.3.2 Within the Algerian Market . . . . . . . . . . . . . . . . . . . . . . . . . 18
+3.3.3 Barriers to Entry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+3.3.4 Market Gaps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+3.4 New Contributions and Competitive Advantages of the Proposed Solution . . . . . 19
+3.5 Strategic Positioning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+4 Production and Organization Plan 21
+4.1 The Service Delivery Process . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+4.2 Infrastructure and Supply . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+4.3 Human Resources . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+4.4 Key Partners . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+5 Financial Plan 26
+5.1 Costs and Charges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+5.2 Revenue: Chiffre d’Affaires . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+5.3 Expected Income Statement: Comptes de Résultats Escomptés . . . . . . . . . . . 29
+5.4 Treasury Plan: Plan de Trésorerie . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+6 Prototype 31
+6.1 Overview of the Prototype . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+6.2 Screen-by-Screen Description . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+6.2.1 User Registration and Professional Domain Selection (Sign-up Screen) . . 32
+6.2.2 Main Dashboard and Data Upload (Home Screen) . . . . . . . . . . . . . 33
+6.2.3 Data Preview and Structural V alidation (Data Passport Screen) . . . . . . . 34
+6.2.4 Automated Data Cleaning and Quality Report (Data Profile Analysis Screen) 35
+2
+
+--- PAGE 3 ---
+6.2.5 Interactive Visualization and Insight Generation (Pipeline Visualize Screen) 37
+6.2.6 AI-Assisted Analysis and Strategic Recommendations (AI Strategic Insights
+Screen) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+6.2.7 Session Results and Export Dashboard . . . . . . . . . . . . . . . . . . . . 40
+Conclusion 42
+Annex 43
+A Financial Tables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+B Business Model Canvas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+3
+
+--- PAGE 4 ---
+List of Figures
+1 Proposed value dimensions of the platform . . . . . . . . . . . . . . . . . . . . . . 9
+2 Competitive positioning map DzDataAutomate relative to existing platforms . . . . 19
+3 Data science automation service delivery architecture . . . . . . . . . . . . . . . . 23
+4 User registration and professional domain selection screen . . . . . . . . . . . . . 33
+5 Main dashboard and data upload screen . . . . . . . . . . . . . . . . . . . . . . . 34
+6 Data preview and structural validation screen . . . . . . . . . . . . . . . . . . . . 35
+7 Automated data cleaning and quality report screen . . . . . . . . . . . . . . . . . . 37
+8 Interactive visualization and insight generation screen . . . . . . . . . . . . . . . . 38
+9 AI-assisted analysis and strategic recommendations screen . . . . . . . . . . . . . 40
+10 Session results and export dashboard . . . . . . . . . . . . . . . . . . . . . . . . . 41
+11 Business Model Canvas of DzDataAutomate . . . . . . . . . . . . . . . . . . . . . 47
+4
+
+--- PAGE 5 ---
+List of Tables
+1 Project timeline . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+2 Comparative analysis of existing solutions . . . . . . . . . . . . . . . . . . . . . . 17
+3 Detailed year 1 cost structure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+4 Revenue detail — DzDataAutomate . . . . . . . . . . . . . . . . . . . . . . . . . 44
+5 Projected income statement — DzDataAutomate . . . . . . . . . . . . . . . . . . 45
+6 Treasury plan — DzDataAutomate (in DZD thousands) . . . . . . . . . . . . . . . 46
+5
+
+--- PAGE 6 ---
+Introduction
+The emergence of artificial intelligence and automated machine learning as mainstream analytical
+tools has fundamentally transformed the way organizations extract value from data. What once
+required the sustained effort of a team of specialized engineers can today, in principle, be accom-
+plished in a matter of minutes by a well-designed software system. Y et this transformation has
+remained, in practice, largely confined to large enterprises with the technical capacity and finan-
+cial resources to deploy and operate these tools. For the vast majority of organizations : the small
+business owner managing a boutique in Algiers, the NGO program officer tracking field interven-
+tions in Batna, the master’s student analyzing survey results at a regional university , the promise
+of data-driven decision-making remains entirely out of reach.
+This gap is not a technical problem. The algorithms exist, the computing infrastructure is accessible,
+and the data is being collected. The gap is architectural: existing platforms have been designed by
+data scientists, for data scientists, and the assumptions embedded in their interfaces, their pricing
+structures, and their deployment models systematically exclude the non-technical majority. No
+amount of incremental improvement to these platforms will bridge that gap, because the gap is not
+in the capability of the tools but in the design philosophy underlying them.
+The present project proposes a response to this gap in the specific context of the Algerian market.
+DzDataAutomate is an intelligent web platform that automates the complete data science workflow
+: from raw file ingestion through cleaning, visualization, and predictive analysis , within an inter-
+face designed from the ground up for users without any data science training. The user does not
+configure models, does not select algorithms, and does not interpret statistical outputs. They state
+their professional context and their analytical goal in plain language, upload their data file, and the
+platform guides them through a structured five-stage pipeline that concludes with a downloadable
+report and a reproducible Python script. Every design decision in the platform reflects a single gov-
+erning principle: the analytical capability of an enterprise system, delivered through an experience
+accessible to anyone.
+The project is developed within the framework of Ministerial Order 1275, which establishes the
+Diplôme-Startup pathway at Algerian universities, and is incubated at ESTIN under the supervision
+of Dr. Amara Karima and Dr. Benslimane Salim. It is carried out by a three-member founding team
+specializing in Artificial Intelligence and Data Science, and represents both an academic deliverable
+and the first operational version of a startup intended for commercial launch.
+This memoir is organized into six chapters. Chapter 1 presents the project idea, the proposed values,
+the team, the objectives, and the implementation timeline. Chapter 2 analyzes the innovative di-
+mensions of the platform across four domains: process automation, intent-driven interaction, new
+customer segments, and privacy-preserving architecture. Chapter 3 conducts a strategic market
+analysis covering the competitive landscape, barriers to entry, identified market gaps, and the plat-
+form’s competitive positioning. Chapter 4 describes the production and organization plan, includ-
+ing the service delivery pipeline, infrastructure, human resources, and key partnerships. Chapter
+5 presents the financial plan across four components: costs and charges, projected revenue, ex-
+pected income statement, and treasury plan. Chapter 6 presents the experimental prototype through
+a screen-by-screen description of the platform’s current implementation, demonstrating the cor-
+respondence between the design principles articulated in the earlier chapters and their concrete
+realization in a navigable web application.
+6
+
+--- PAGE 7 ---
+CHAPTER 1
+PROJECT PRESENTATION
+7
+
+--- PAGE 8 ---
+1.1 The Project Idea (Proposed Solution)
+Our project operates in the domain of digital services and modern applications, specifically the
+automation of data analysis through artificial intelligence.
+The idea originated from a straightforward but revealing observation: a large number of Algerian
+small and medium businesses, students, and researchers collect data on a daily basis: sales records,
+survey results, inventory logs, customer data, yet never manage to extract real value from it. Existing
+analysis tools such as Google AutoML, DataRobot, or Python-based environments require advanced
+technical skills that most of these users simply do not have. At the same time, hiring a professional
+data analyst represents a cost that is out of reach for a small business or an independent researcher.
+These users find themselves in a paradoxical situation: they have the data, but not the means to
+understand it.
+In response to this gap, our project proposes an intelligent web platform called DzDataAutomate,
+accessible from any browser with no installation required. The concept works as follows: the user
+uploads their data file in CSV or Excel format, states their objective in plain terms, and the platform
+automatically handles data cleaning, generates relevant visualizations, and executes predictive or
+descriptive analyses tailored to the user’s declared need. Every step of the process is presented in
+plain language with no technical jargon, and the session concludes with a downloadable report and
+a documented Python script that allows the user to reproduce or extend the analysis independently.
+Development relies on open-source technologies; primarily Python, Streamlit, Pandas, Scikit-learn,
+and Plotlywhich, keeps development costs at a minimum while guaranteeing high performance.
+1.2 Proposed Values
+The values our platform delivers to its users are organized around the following dimensions:
+Modernity: There is currently no data analysis automation platform designed specifically for the
+Algerian market, available in for this specific community, and adapted to the realities of local small
+structures. Our solution addresses an entirely new need for which no similar local offering previ-
+ously existed.
+Performance: The platform is capable of processing, cleaning, and visualizing a standard dataset in
+a really short amount of time. Analysis models are selected automatically by the system according
+to best-performance criteria, delivering reliable results without any intervention from the user.
+Flexibility: The user has access to two cleaning modes (automatic or step-by-step) and can choose
+from the suggested analyses the ones that precisely match their need. The platform adapts to the
+type of data provided and the intent profile declared by the user at the beginning of each session.
+Task accomplishment: A boutique owner, an NGO manager, or a master’s student can go from a
+raw disorganized file to a complete downloadable analysis report without writing a single line of
+code and without any prior training in data science.
+User-centered design: Every screen of the platform is designed to guide the user step by step,
+asking questions in natural language rather than asking them to configure technical parameters.
+The experience feels more like a guided conversation than a traditional analysis software interface.
+Cost reduction: Access to the platform is free for basic use, making it accessible to users who
+could not afford to hire a data analyst or purchase a professional software license. Infrastructure
+costs are minimized through the use of open-source cloud services.
+Risk reduction: User data is never permanently stored on our servers. Only the statistical pro-
+file of the dataset is transmitted to the AI model for generating analysis suggestions, ensuring the
+confidentiality of sensitive business information throughout the entire session.
+Accessibility: The platform is accessible from any device with a web browser, with no installation,
+no mandatory subscription, and no technical prerequisite. It explicitly targets users who have never
+had access to data analysis tools before.
+Ease of use: The interface follows a clear step-by-step progression: intent capture, upload, cleaning,
+8
+
+--- PAGE 9 ---
+analysis, results, so the user always knows where they are in the process and what comes next. No
+prior training is required to use the platform in its entirety.
+Platform Value
+Accessible AI-powered data analysis
+Modernity
+Local digital solution
+Performance
+Fast automated analysis Flexibility
+Automatic or guided mode
+Task accomplishment
+From raw file to report
+User-centered design
+Guided natural workflow
+Cost reduction
+Affordable basic access Risk reduction
+No permanent data storage
+Accessibility
+Browser-based, no install
+Ease of use
+Clear step-by-step process
+Figure 1: Proposed value dimensions of the platform
+1.3 Project Team
+The project is developed by a team of 3 students the field of AI and Data Science at ESITN, under
+the supervision of Dr. Amara Karima & Examiner.
+The team composition and division of responsibilities are as follows:
+Chikhi Mey Aya, student in AI and Data Science, is responsible for backend development. They
+handle the implementation of the cleaning modules, the automatic analysis algorithms, and the
+integration of the artificial intelligence API.
+Djouzi Nour El Houda , student in Ai and Data Science, is responsible for frontend development
+and user experience. They handle interface design, navigation flow between stages, and the visual
+consistency of the platform.
+Benoudjit Lyne, student in AI and Data Science, is responsible for the machine learning and Data
+Science integration, testing, technical documentation, and the the data processing pipeline.
+The financial section of the project and the Business aspect is a caollaborative work between all the
+members of the team.
+The team meets every week to review progress, identify technical obstacles, and adjust the timeline
+as needed. Daily collaboration takes place through a shared GitHub repository for code versioning
+and through Discord and email for quick exchanges. Important decisions are documented in a shared
+project log maintained on Notion.
+1.4 Project Objectives
+Our primary objective is to become the first Algerian platform for data analysis automation targeting
+non-technical users, offering a local, accessible, and affordable alternative to the international tools
+currently dominating this segment.
+In the short term (year 1) , the objective is to deploy a functional prototype covering automatic
+data cleaning and interactive visualization, and to reach 100 active users recruited primarily from
+universities and partner incubators.
+9
+
+--- PAGE 10 ---
+In the medium term (year 3) , the objective is to reach 500 paying clients among Algerian SMEs
+in the commerce, services, and research sectors, and to establish formal partnerships with at least
+three national universities for the integration of the platform into data analysis training programs.
+In the long term (year 5), the objective is to establish the platform as the reference solution for data
+analysis automation across the Algerian and North African markets, capturing an estimated 15%
+share of the Algerian SME analytics segment, while exploring expansion toward the Tunisian and
+Moroccan markets.
+1.5 Project Timeline
+The project runs over a period of ten months, organized into successive tasks as follows:
+Task Description Week
+1 Market research, team formation, technical architecture design 1–4
+2 Development of the design and basisc user interface 4–6
+3 Development of the automatic visualization module 7
+4 Internal testing, bug fixing, performance optimization 8
+5 Development of PDF export, user dashboard, and script gener-
+ation
+9
+6 AI API integration and testing 10
+7 financial section details 11
+8 Prototype finalization and thesis reduction 12–13
+Table 1: Project timeline
+Each task produces a documented deliverable that is reviewed by the full team before moving to the
+next stage. The experimental prototype presented to the jury at the end of month 10 integrates at
+minimum the automatic data cleaning and interactive visualization functionalities, which constitute
+the core of the product as defined in the subsequent axes of this memoir.
+10
+
+--- PAGE 11 ---
+CHAPTER 2
+INNOV ATIVE ASPECT
+11
+
+--- PAGE 12 ---
+2.1 Nature of Innovation
+The platform sits at the intersection of technological innovation and market innovation it introduces
+no fundamentally new ML algorithm, but radically transforms how data science is accessed and
+delivered, which is where the real innovation lies.
+2.2 Innovation Domains
+2.2.1 New Processes: Automating the Data Science Workflow
+The proposed platform fundamentally redefines the data science workflow by replacing a tradition-
+ally complex, multi-day manual process with a fully automated four-stage pipeline executable in a
+matter of minutes. In conventional practice, extracting actionable insights from raw data requires
+the sequential intervention of a trained data scientist across several distinct phases: exploratory data
+analysis, data cleaning and preprocessing, feature engineering, model selection and hyperparameter
+tuning, training, evaluation, and finally the interpretation and communication of results. Each of
+these phases demands both domain expertise and significant time investment, rendering the process
+inaccessible to the vast majority of potential users.
+The platform addresses this barrier through a rule-based automation engine that handles each phase
+without requiring user intervention. At Stage 1, the system performs an immediate silent scan of the
+uploaded dataset, producing a structured data passport that summarizes row count, column types,
+missing value distribution, and detected categorical and temporal features. At Stage 2, the cleaning
+pipeline applies a deterministic sequence of operations: duplicate removal, missing value imputa-
+tion using median and mode strategies, outlier flagging based on standard deviation thresholds, date
+format standardization, and near-empty column elimination. This process can be executed either
+automatically in a single click or guided step by step for users who wish to retain control. At Stage
+4, the system automatically detects the analytical task type based on the target column characteris-
+tics, selects and trains the most appropriate model from a predefined set of scikit-learn estimators,
+evaluates performance using relevant metrics, and presents results through interactive visualizations
+accompanied by plain-language summaries.
+The result is a complete analytical workflow, from raw CSV to predictive model and interpreted
+dashboard, that a non-technical user can execute in under five minutes, without writing a single line
+of code or possessing any knowledge of statistics or machine learning. This represents a substan-
+tial increase in operational efficiency and democratizes access to data-driven decision-making for
+organizations that cannot afford dedicated data science teams.
+2.2.2 New Functionalities: Intent-Driven Analysis via AI Suggestion Cards
+A central functional innovation of the platform is its intent-driven interaction model, which inverts
+the conventional relationship between the user and the analytical tool. In existing platforms, in-
+cluding spreadsheet-based tools, business intelligence dashboards, and AutoML solutions, the user
+is expected to arrive with a predefined analytical objective and sufficient technical literacy to trans-
+late that objective into a query, a chart configuration, or a model specification. This prerequisite
+excludes the majority of potential users, particularly those in small and medium-sized enterprises
+who possess domain knowledge but lack data science training.
+The proposed platform resolves this by capturing user intent before any data is processed. At Stage
+0, the user is presented with two simple visual card selections: the type of data they are working
+with, such as sales, customers, operations, research, and similar categories, and the analytical goal
+they wish to achieve, such as understanding past performance, predicting future values, grouping
+similar records, or cleaning data only. This intent profile is stored and carried through all subsequent
+stages, allowing the system to tailor its behavior, including cleaning strategy, model selection, and
+12
+
+--- PAGE 13 ---
+output format, to the declared objective.
+Following data ingestion and automated cleaning at Stages 1 and 2, the platform executes Stage 3,
+the AI layer, which constitutes the most distinctive functional contribution of the system. A single
+call to a locally deployed large language model via Ollama transmits only the intent profile and
+a compact data profile containing column names, inferred types, and descriptive statistics. The
+model processes this information and returns a structured JSON response containing three to five
+analytical suggestions expressed in plain business language, such as “Which product generated the
+most revenue last quarter?”, “Predict next month’s sales based on historical trends”, or “Identify
+which customer segments are most valuable.” Each suggestion is tagged with a reference to a pre-
+built analysis module in the backend, so that when the user selects a card, the system immediately
+routes the cleaned dataset to the appropriate scikit-learn pipeline and produces results without any
+further input.
+This architecture achieves two simultaneous objectives. First, it eliminates the knowledge barrier
+that prevents non-technical users from engaging with analytical tools, by replacing open-ended
+queries with contextually generated, actionable suggestions. Second, it ensures that the AI compo-
+nent enhances rather than replaces the deterministic pipeline: if the language model is unavailable
+or produces an unexpected response, the system falls back gracefully to a default set of suggestions
+derived from the detected data types and the intent profile alone. The analytical engine continues
+to function correctly regardless of the AI layer’s availability, which is a critical reliability property
+for a demonstration environment.
+2.2.3 New Customers: Reaching the Non-Technical Majority
+The competitive landscape of automated machine learning and business intelligence is currently
+dominated by platforms designed for technically sophisticated users operating within large organi-
+zational structures. Google V ertex AI, DataRobot, H2O.ai, and Microsoft Azure Machine Learning
+all require users to possess working knowledge of data preprocessing concepts, model evaluation
+metrics, and cloud infrastructure management. Their pricing models, which typically operate on
+enterprise subscription or pay-per-compute bases, further restrict access to organizations with ded-
+icated technology budgets. As a consequence, the substantial segment of the market composed
+of small and medium-sized enterprises, independent professionals, students, researchers, and non-
+governmental organizations has been systematically excluded from the benefits of automated data
+analysis.
+This exclusion is particularly pronounced in the Algerian market, where the digital transformation
+of small businesses remains at an early stage, dedicated data science teams are rare outside of large
+public institutions and multinational subsidiaries, and awareness of AutoML tools is limited. Field
+observations and the strategic analysis conducted as part of this project indicate that many Algerian
+SME operators collect transactional and operational data, including sales records, inventory logs,
+and customer registers, but lack the means to extract analytical value from it. The cost of engag-
+ing an external data consultant, where available, represents a significant barrier. Cloud-based AI
+solutions are further constrained by data sovereignty concerns, inconsistent internet connectivity in
+certain regions, and a general reluctance to entrust operational data to foreign providers.
+The proposed platform is designed from the ground up to serve this underserved segment. Every
+design decision, including the intent-capture card interface at Stage 0, the plain-language suggestion
+cards at Stage 3, the auto-mode cleaning pipeline at Stage 2, the natural-language result summaries
+at Stage 4, and the local deployment model enabled by Ollama, reflects a deliberate prioritization
+of accessibility over configurability. The target user is not a data scientist who wants fine-grained
+control over hyperparameters; it is a boutique owner who wants to know which product to reorder,
+a student who wants to predict exam outcomes from study habit data, or an NGO program manager
+who wants to identify which intervention regions show the greatest need. By serving these users
+13
+
+--- PAGE 14 ---
+effectively, the platform opens a customer segment that existing tools have never addressed and that
+represents a significant and growing market opportunity in the Algerian and broader North African
+context.
+2.2.4 New Offers: A Privacy-Preserving, Offline-Compatible Analysis Platform
+A key innovation of the proposed platform lies in its ability to provide AI-assisted data analysis
+while preserving user privacy. To achieve this objective, the system integrates a locally deployed
+large language model through Ollama, enabling natural language interactions without requiring the
+transmission of sensitive information to external cloud services.
+The AI layer, corresponding to Stage 3 of the proposed architecture, operates exclusively on a data
+profile generated from the uploaded dataset rather than on the raw data itself. This profile contains
+only metadata and aggregated information: column names, data types, descriptive statistics, and
+dataset structure. Under no circumstances are the original records or confidential business data
+exposed to the language model.
+This design choice directly addresses one of the major barriers identified during our strategic analy-
+sis of the Algerian market: data sharing hesitancy and skepticism toward cloud-based AI solutions.
+Many organizations, particularly small and medium-sized enterprises, remain reluctant to adopt in-
+telligent systems that require transferring operational data to third-party providers. By ensuring
+that the analytical process remains local, the platform enhances trust and encourages the adoption
+of data-driven practices.
+Furthermore, the use of Ollama allows the language model to run entirely on the user’s machine,
+eliminating dependency on external APIs and reducing operational costs. The platform’s core func-
+tionalities: data ingestion, preprocessing, automated analysis, and predictive modeling can therefore
+be executed in environments with limited internet connectivity or strict data governance require-
+ments.
+This privacy-preserving and offline-compatible architecture constitutes a significant differentiat-
+ing factor compared with conventional cloud-centric analytical platforms. It demonstrates that ad-
+vanced AI capabilities can be delivered while respecting data sovereignty, confidentiality, and the
+practical constraints faced by organizations operating in emerging markets.
+14
+
+--- PAGE 15 ---
+CHAPTER 3
+STRATEGIC MARKET ANALYSIS
+15
+
+--- PAGE 16 ---
+3.1 Identification of Competitors
+The competitive landscape surrounding AI-powered data analysis platforms can be segmented into
+two distinct categories: established international solutions operating at enterprise or professional
+scale, and emerging or nascent national offerings within the Algerian market.
+3.1.1 International Competitors
+DataRobot is an enterprise-grade AutoML platform that automates the end-to-end machine learn-
+ing lifecycle, from data ingestion to model deployment and monitoring. It offers sophisticated
+model explainability features and supports a wide range of supervised learning tasks. Its target
+market is primarily large enterprises with dedicated data science teams seeking to accelerate model
+development rather than replace technical expertise entirely.
+Google Vertex AI is Google Cloud’s unified machine learning platform, integrating AutoML capa-
+bilities with custom model training, pipeline orchestration, and deployment infrastructure. It pro-
+vides access to state-of-the-art foundation models and is tightly coupled with the broader Google
+Cloud ecosystem. Its usage presupposes familiarity with cloud architecture and machine learning
+concepts.
+Microsoft Power BI is a business intelligence and data visualization platform that enables users to
+connect to diverse data sources, build interactive dashboards, and share reports across organizations.
+While accessible to non-technical business users for visualization purposes, it does not provide
+automated machine learning or predictive modeling capabilities in its standard configuration, and
+its advanced AI features require integration with Azure Machine Learning.
+KNIME Analytics Platform is an open-source data science workbench that enables users to con-
+struct analytical workflows through a visual node-based interface. It supports a broad range of data
+processing, machine learning, and integration tasks. Although it lowers the programming barrier
+relative to scripting environments, it still requires a conceptual understanding of data science work-
+flows and is primarily adopted by analysts and researchers rather than general business users.
+RapidMiner is a data science platform offering visual workflow design, AutoML, and model de-
+ployment capabilities. Like KNIME, it targets data analysts and citizen data scientists within or-
+ganizations, and its enterprise licensing model places it beyond the reach of small businesses and
+individual users.
+Orange Data Mining is an open-source visual programming environment for data analysis and ma-
+chine learning, developed by the University of Ljubljana. It is widely used in academic settings and
+offers an accessible interface for educational purposes, though it lacks the integration, scalability,
+and natural language interaction capabilities expected in a production business context.
+3.1.2 National Competitors
+At the time of this analysis, no documented Algerian startup or established domestic software pub-
+lisher offers a platform functionally comparable to the proposed solution. Data analysis services in
+Algeria are primarily delivered through consultancy arrangements, wherein organizations engage
+external experts on a project basis, or through the informal adoption of general-purpose tools such
+as Microsoft Excel, Google Sheets, or Python scripting environments by technically trained staff.
+The absence of a dedicated, locally developed AutoML or AI-assisted analysis platform represents
+both a market gap and a strategic opportunity for the proposed venture.
+3.2 Comparative Analysis of Existing Solutions
+The following table presents a structured comparison of the principal competing solutions across
+the criteria most relevant to the proposed platform’s positioning.
+16
+
+--- PAGE 17 ---
+Table 2: Comparative analysis of existing solutions
+Criterion DataRobot Google
+Vertex AI
+Power BI KNIME Rapid
+Miner
+Orange Proposed
+Platform
+Core ML capabilities Full
+AutoML
+Full
+AutoML
+Limited Full
+pipeline
+Full
+AutoML
+Moder
+ate
+Full AutoML
+Non-technical
+accessibility
+Low Low Medium Low–
+Medium
+Low–
+Medium
+Medium High
+Natural language
+interaction
+Partial Partial Limited None None None Full (local
+LLM)
+Deployment mode Cloud only Cloud only Cloud/
+Desktop
+Desktop Cloud/
+Desktop
+Desktop Local/Offline
+Data privacy
+guarantees
+Moderate Low Moderate High Moderate High High
+Internet dependency Required Required Required Optional Partial None None (core
+pipeline)
+Cost V ery high High Medium Free/
+Enterprise
+High Free Low
+Technical expertise
+required
+High High Medium Medium Medium Low–
+Medium
+None
+Adaptation to the
+Algerian market
+None None None None None None High
+The comparative analysis reveals a consistent pattern across existing international solutions: the
+platforms offering the most powerful analytical capabilities impose the highest barriers in terms
+of technical expertise, cloud dependency, and cost, while those that are more accessible sacrifice
+depth of functionality or lack intelligent assistance features altogether. No existing solution simul-
+taneously addresses accessibility, privacy, offline capability, and low cost within a single coherent
+product, which defines the design space the proposed platform occupies.
+3.3 Assessment of the Intensity of Competition
+3.3.1 At the International Level
+The global market for automated machine learning and AI-assisted data analysis is characterized
+by high competitive intensity among a small number of well-capitalized players. The dominant
+platforms, including DataRobot, Google V ertex AI, and Microsoft Azure Machine Learning, ben-
+efit from substantial research and development investment, established enterprise client bases, and
+deep integration with broader cloud ecosystems that create significant switching costs. Competi-
+tion between these platforms is primarily driven by model performance benchmarks, integration
+breadth, and enterprise support capabilities, rather than by accessibility or cost considerations for
+smaller organizations.
+However, this intense competition at the enterprise tier has not produced meaningful innovation
+at the accessibility tier. The market for non-technical users, those who require analytical capa-
+bilities but lack the expertise to configure and operate existing tools, remains structurally under-
+served. Open-source tools such as KNIME and Orange partially address this gap in academic and
+research contexts, but have not achieved significant adoption among small business operators or
+non-governmental organizations, whose needs differ substantially from those of academic users.
+17
+
+--- PAGE 18 ---
+3.3.2 Within the Algerian Market
+Competitive intensity within Algeria is presently low, reflecting the early stage of digital transfor-
+mation across most sectors of the national economy. The primary competitive force in this context
+is not a directly comparable software product but rather the entrenched practice of manual data han-
+dling and informal analysis, combined with the option of engaging external consultants for punctual
+analytical needs. The absence of a domestically produced AutoML or AI-assisted analysis platform
+means that the proposed startup would enter a market with no direct local competitor, though it
+would face the indirect competition of inertia and unfamiliarity with the product category.
+3.3.3 Barriers to Entry
+Several structural barriers characterize this sector. The technical complexity of building reliable Au-
+toML pipelines requires deep expertise in machine learning, software engineering, and user experi-
+ence design, resources that are scarce in early-stage ventures. The reputational barriers associated
+with data handling are also significant: organizations considering the adoption of an AI-assisted
+platform must trust that their operational data will be processed securely, a concern that is ampli-
+fied in markets with limited regulatory frameworks governing data protection. Additionally, the
+dominance of established international brands in the broader software market creates a perception
+challenge for any locally developed alternative, requiring deliberate effort to establish credibility
+among potential adopters.
+3.3.4 Market Gaps
+The strategic analysis identifies three principal gaps that existing solutions fail to address ade-
+quately. First, there is no platform currently available that combines full AutoML functionality
+with an interface designed explicitly for users without data science training, operating in Arabic
+or French, and adapted to the data characteristics common in Algerian business contexts. Second,
+no existing solution addresses the data sovereignty concerns of Algerian organizations through a
+locally executable AI layer; all current platforms with natural language interaction capabilities rely
+on external API calls that transmit user data to foreign servers. Third, the cost structures of all
+capable international platforms place them beyond the budget of the SME segment that constitutes
+the majority of Algerian private sector activity.
+18
+
+--- PAGE 19 ---
+Technical complexity →
+User accessibility →Low High
+Low
+High Enterprise tier : high complexity, low accessibility
+Accessibility tier : underserved gap
+DataRobot
+Enterprise
+Google
+V ertex AI
+Enterprise
+Azure ML
+Microsoft
+KNIME /
+Orange
+Academic
+Manual handling
++ consultants
+DzDataAutomate
+Target position
+High access ∙ Low complexity
+No direct local competitor
+Underserved gap
+SMEs ∙ students ∙ NGOs ∙ Algeria
+Figure 2: Competitive positioning map DzDataAutomate relative to existing platforms
+3.4 New Contributions and Competitive Advantages of the Proposed Solu-
+tion
+The proposed platform’s competitive advantages derive not from a single differentiating feature
+but from the coherent integration of several design principles that collectively address the gaps
+identified above.
+The most technically distinctive contribution is the local execution of the AI assistant through Ol-
+lama, a framework enabling the deployment of large language models on standard consumer hard-
+ware without internet connectivity. This architectural choice produces multiple cascading benefits.
+It eliminates the transmission of sensitive business data to external servers, directly addressing the
+data sovereignty concerns that constitute a primary barrier to AI adoption among Algerian orga-
+nizations. It removes the recurring cost of commercial API usage, which would otherwise render
+AI-assisted features economically unviable for small-scale users. It ensures full functionality in en-
+vironments with unreliable or restricted internet access, a practical constraint affecting a significant
+proportion of potential users in secondary cities and rural areas. And it provides a credible response
+to the regulatory uncertainty surrounding cross-border data transfer, which remains an unresolved
+concern in the Algerian legal framework.
+The platform’s privacy-preserving architecture extends beyond the AI layer. The analytical pipeline,
+including data ingestion, preprocessing, model training, and result generation, operates entirely on
+the user’s local machine or organizational server, with no component of the core workflow requiring
+external connectivity. The AI assistant at Stage 3 receives only a compact data profile containing
+metadata and aggregated statistics, never the raw records themselves, ensuring that confidential
+business information remains under the exclusive control of the user at all times.
+From an accessibility standpoint, the intent-capture mechanism at Stage 0 and the AI-generated sug-
+gestion cards at Stage 3 together constitute a novel interaction paradigm that has no direct equivalent
+among existing solutions. Rather than requiring users to possess prior knowledge of what analytical
+technique is appropriate for their data, the system generates contextually relevant analytical ques-
+tions in plain language, derived from the user’s stated goal and the structural characteristics of their
+19
+
+--- PAGE 20 ---
+dataset. This design eliminates the principal knowledge barrier that prevents non-technical users
+from engaging productively with analytical tools, without sacrificing the analytical depth available
+to more experienced users who may choose the step-by-step mode.
+Finally, the platform’s cost structure, grounded in open-source components such as scikit-learn,
+pandas, Ollama, React, and FastAPI and requiring no proprietary licensing or cloud infrastructure,
+enables a pricing model accessible to SMEs, students, and NGOs, segments for which all current
+enterprise-grade alternatives are economically prohibitive.
+3.5 Strategic Positioning
+The proposed startup positions itself at the intersection of three market imperatives that no ex-
+isting solution currently addresses simultaneously: analytical power, user accessibility, and data
+sovereignty. This positioning is not incidental but reflects a deliberate strategic choice to serve a
+large and structurally underserved segment of the market rather than compete directly with estab-
+lished enterprise platforms on their own terms.
+The primary target segments are Algerian small and medium-sized enterprises seeking to extract
+decision-relevant insights from their operational data without the cost or complexity of engaging
+specialist consultants; university students and academic researchers who require accessible ana-
+lytical tools for project and thesis work; and non-governmental and public-sector organizations
+operating under data confidentiality obligations that preclude the use of cloud-based AI services.
+The core value proposition can be stated as follows: the platform delivers the analytical capabilities
+of an enterprise AutoML system through an interface accessible to any user regardless of technical
+background, with the privacy guarantees of a fully local deployment and at a cost consistent with
+the budgetary realities of small organizations in emerging markets.
+The startup’s sustainable competitive advantages rest on three foundations. The first is architectural:
+the local LLM deployment model is technically non-trivial to replicate and represents a genuine dif-
+ferentiator relative to both established cloud platforms and simpler open-source tools. The second
+is contextual: the platform’s explicit adaptation to the Algerian market, in terms of language, data
+characteristics, connectivity constraints, and regulatory environment, creates an alignment with
+local user needs that international competitors, by virtue of their generalist design, cannot easily
+achieve. The third is economic: the open-source technology stack enables a cost structure that sus-
+tains competitive pricing over time, while the absence of recurring API or cloud infrastructure costs
+provides a structural advantage over solutions dependent on third-party services.
+Potential users would choose this platform over existing alternatives for a convergence of reasons: it
+requires no technical expertise to operate; it keeps their data on their own infrastructure; it functions
+without reliable internet access; it costs significantly less than comparable enterprise solutions; and
+it speaks to their analytical needs in the language of their business domain rather than the language
+of data science. In a market where all of these requirements are currently unmet by any single
+available product, the proposed solution occupies a defensible and meaningful position.
+20
+
+--- PAGE 21 ---
+CHAPTER 4
+PRODUCTION AND ORGANIZATION PLAN
+21
+
+--- PAGE 22 ---
+4.1 The Service Delivery Process
+Since our project is a digital platform rather than a physical product, the production process cor-
+responds to the sequence of operations the system performs to deliver the service to the end user.
+Each step is designed to be fully automated, requiring minimal technical intervention from the user
+while guaranteeing a reliable and high-quality output.
+The service delivery pipeline unfolds as follows:
+Step 1: Registration and authentication. The user creates an account on the platform using their
+email address. During registration, they complete a brief intent profile by answering two guided
+questions about their project type and analytical goal. This profile is stored and used throughout the
+session to personalize all subsequent steps.
+Step 2: Data upload. The user uploads their data file in CSV or Excel format through a drag-
+and-drop interface. The system immediately performs a silent background scan and displays a
+data passport summarizing the file structure: number of rows, number of columns, column types
+detected, proportion of missing values, and sample values. This gives the user immediate confidence
+that the system has correctly understood their file before any processing begins.
+Step 3: Automatic data cleaning. The system runs a multi-step cleaning pipeline automatically.
+It removes exact duplicate rows, fills missing numeric values using the median of each column,
+fills missing categorical values using the most frequent value, detects statistical outliers using the
+standard deviation method and flags them for the user’s review, standardizes date formats across all
+detected date columns, and removes columns where more than 70% of values are absent as these
+provide no analytical value. Each operation is logged in real time with a plain-language description
+of what was done and why.
+Step 4: Cleaning report. Upon completion of the cleaning pipeline, the system presents a struc-
+tured cleaning report summarizing every modification made to the original dataset. The user can
+download the cleaned version of their file at this stage. The report is written entirely in non-technical
+language so that a user with no data science background can fully understand what changed and why.
+Step 5: Intelligent analysis suggestions. The system sends the data profile and the user’s intent
+profile to an AI model via a single API call. The AI returns a list of three to five specific analyses that
+are relevant and technically feasible given the structure of the uploaded dataset. These suggestions
+are presented as clickable cards written in plain business language, such as revenue by product
+category or three-month sales prediction. The raw data never leaves the user’s device during this
+step—only the statistical profile is transmitted.
+Step 6: Analysis execution. The user selects one or more suggested analyses. The system executes
+the corresponding pre-built analysis module, which may involve generating interactive charts using
+Plotly, running a regression or classification model using Scikit-learn, or performing a clustering
+operation using KMeans. Where machine learning models are involved, the system automatically
+tests multiple algorithms and parameter combinations using cross-validation and selects the best-
+performing configuration without any input from the user. Results are displayed as interactive
+visualizations accompanied by a plain-language summary of findings.
+Step 7: Report generation and script export. The user can download a PDF report containing all
+visualizations, the cleaning summary, and the analysis results formatted for presentation or sharing.
+Additionally, the platform generates a fully documented Python script that reproduces every oper-
+ation performed during the session, allowing technically inclined users to continue working with
+their data independently.
+Step 8: Data deletion. Upon the end of the session or explicit logout, all uploaded data and inter-
+mediate files are permanently deleted from the server. No user data is retained beyond the active
+session. This step is communicated clearly to the user as a trust and privacy guarantee, which is
+particularly important in the Algerian market where data sharing hesitancy remains a significant
+adoption barrier.
+The following diagram summarizes the full service delivery pipeline:
+22
+
+--- PAGE 23 ---
+Stage 0: intent capture (before upload)
+Two questions asked as visual card buttons, not text fields
+Q1: project type
+Sales / Customers / Research / Ops…
+Q2: goal
+Understand past / Predict / Group / Clean only
+Stage 1: upload
+Drag and drop CSV / Excel file
+Instant silent scan: “data passport” shown to user
+Rows ∙ Columns ∙ Missing values ∙ Date cols ∙ Numeric cols ∙ Text cols
+Stage 2: clean
+User picks mode on arrival at this screen
+Auto mode
+One button click
+1. Remove duplicates
+2. Fill missing values
+3. Flag outliers
+4. Standardize date formats
+5. Drop near-empty columns
+Step-by-step mode
+Same pipeline, paused each step
+One decision card at a time
+“We found 23 duplicates.”
+Remove all / Keep first / Skip
+Recommended option highlighted
+Cleaning report output
+Plain language log ∙ Download cleaned CSV ∙ Script log starts
+Stage 3 : understand (AI layer)
+One API call sends: intent profile + data profile (column names, types, stats)
+NOT the raw data ; privacy preserved
+AI returns JSON: 3–5 specific things this dataset can answer
+Written in business language and mapped to pre-built modules
+User sees 3–5 clickable suggestion cards
+e.g. “Which product sold most?” ∙ “Predict next month’s revenue” ∙ “Find what drives sales”
+Stage 4 : act (rule-based + scikit-learn)
+Platform runs chosen analysis: AutoML selects best model and params in background
+User sees: interactive Plotly chart ∙ plain language summary ∙ confidence signal
+No numbers or technical metrics shown unless in step-by-step mode
+Download Jupyter notebook / Python script
+intent profile stored
+Figure 3: Data science automation service delivery architecture
+4.2 Infrastructure and Supply
+In the context of a digital platform, the concept of supply refers to the technical infrastructure and
+third-party services on which the platform depends to function. Our infrastructure strategy is de-
+signed to minimize costs during the development and prototype phases while allowing seamless
+scaling as the user base grows.
+Primary hosting infrastructure: During the prototype phase, the platform is built using React for
+the frontend interface and FastAPI for the Python data processing backend. The frontend is hosted
+on V ercel, which offers completely free hosting for React applications with automatic deployment
+directly from GitHub and no server configuration required. The backend is hosted on Render, which
+offers a free tier for Python web services and similarly deploys automatically from GitHub with no
+infrastructure management needed. This split architecture eliminates hosting costs entirely during
+the prototype and first year of operation while producing a result that looks and behaves like a real
+commercial web application rather than a development prototype. As the platform grows beyond
+the prototype stage and reaches a paying user base, the backend hosting will migrate to a more
+powerful tier on Render or to a dedicated cloud environment on Amazon Web Services or Google
+Cloud Platform, both of which offer startup credit programs that can reduce costs significantly
+during the early scaling phase.
+Development and collaboration tools: The source code is versioned and collaboratively managed
+through GitHub, which also serves as the project’s continuous integration pipeline. Project man-
+agement and documentation are handled through Notion, allowing the team to maintain a shared
+23
+
+--- PAGE 24 ---
+knowledge base, meeting logs, and task assignments in one place. User interface design mock-
+ups and prototypes are created in Figma before implementation, ensuring consistency between the
+intended design and the delivered product.
+AI API provider: The platform’s intelligent analysis suggestion feature relies on a single API
+call per session to a large language model provider; either Anthropic’s Claude API or OpenAI’s
+API. API usage costs are minimal given the low token volume of each call, which transmits only a
+structured data profile rather than raw data. During the prototype phase this cost is negligible and
+can be covered by free API credits available to students and academic projects.
+Payment infrastructure: For monetization of the paid subscription tier, the platform will integrate
+Chargily, the leading Algerian payment gateway, which supports local payment methods including
+CIB and Dahabia bank cards. This is a critical infrastructure choice given that international payment
+processors such as Stripe are not fully accessible in Algeria, and that the target user base relies
+predominantly on local banking infrastructure.
+4.3 Human Resources
+Our platform is by nature a highly automated service. Once deployed, it operates without requiring
+continuous human intervention for individual user sessions. However, the human resources required
+evolve across three distinct phases of the project.
+During the development phase (weeks 1 to 13), the entire project is carried out by the three-student
+founding team. Each member fulfills a defined role as described in Axis 1, covering backend devel-
+opment, frontend design, testing, documentation, and financial planning. No external recruitment
+is necessary during this phase as the student team possesses the complementary skills required to
+build and deliver the prototype.
+At the launch phase (year 1), two additional profiles will be needed to support the growing user
+base. A customer support specialist will handle user onboarding, respond to technical questions,
+and collect structured feedback. Given the Algerian context where digital literacy levels vary signif-
+icantly, this role is particularly important to reduce abandonment during the first user experience.
+A junior backend developer will be recruited to assist with maintenance, bug resolution, and the
+implementation of new analysis modules based on user feedback.
+At the scaling phase (year 3 onward), as the platform reaches 500 or more active users, two addi-
+tional profiles become necessary. A data scientist will join the team to improve the accuracy and
+breadth of the machine learning models, expand the library of analysis patterns, and maintain the
+quality of the AI suggestion system. A digital marketing specialist will be responsible for com-
+munity growth, university partnerships, content creation, and managing the platform’s presence on
+LinkedIn and Instagram, which are the primary professional networks used by the target audience
+in Algeria.
+All recruitment during the scaling phase will prioritize profiles from Algerian universities, particu-
+larly graduates of computer science, data science, and information systems programs, in alignment
+with the platform’s mission of contributing to the local digital economy.
+4.4 Key Partners
+The successful development and deployment of the platform depends on a network of strategic
+partners whose contributions complement the capabilities of the founding team.
+University incubators and CNESIIU:The National Commission for the Coordination and Follow-
+up of Innovation and University Incubators plays a central role as the institutional framework within
+which this project is being developed and validated. University incubators affiliated with CNESIIU
+provide the team with workspace, mentorship from experienced entrepreneurs and academics, and
+direct access to a community of student users who represent the platform’s primary early adopter
+24
+
+--- PAGE 25 ---
+segment. This partnership is the most important in the project’s early stage as it provides both
+legitimacy and visibility at zero cost.
+Local SMEs as early adopter partners: A small group of willing local businesses (ideally from
+the retail, services, or agri-food sectors which are well represented in the Batna region) will be
+approached to participate in the beta testing phase. These businesses provide real-world datasets and
+authentic feedback on usability, which is far more valuable than feedback from a purely academic
+environment. In exchange, they receive free access to the platform and priority support during the
+launch phase. Their testimonials will serve as the first social proof supporting the platform’s market
+credibility.
+Cloud providers, startup programs: Both Amazon Web Services and Google Cloud Platform
+offer structured startup credit programs that grant qualifying early-stage projects between several
+hundred and several thousand dollars in free cloud credits. These programs are accessible to projects
+incubated within recognized university structures, which our project qualifies for. Securing these
+credits before the end of the prototype phase is a priority action that will reduce infrastructure costs
+to near zero during year one of commercial operation.
+Open-source community and Kaggle: The platform’s machine learning modules are built on top
+of the Scikit-learn open-source library, which is maintained by a global contributor community
+and continuously improved at no cost to our project. Kaggle, the data science platform owned by
+Google, provides free access to hundreds of public datasets that are used during the development
+phase to test and validate each analysis module. These two resources together eliminate the need
+for any investment in training data or proprietary algorithms during the prototype phase.
+25
+
+--- PAGE 26 ---
+CHAPTER 5
+FINANCIAL PLAN
+26
+
+--- PAGE 27 ---
+5.1 Costs and Charges
+Nature of initial investment
+Our project benefits from a structurally low cost base due to three factors: the founding team consists
+of students who contribute their time and skills without salary during the development phase, the
+technology stack is built entirely on open-source libraries that require no licensing fees, and the
+hosting infrastructure during the prototype phase is available at no cost through free tiers and startup
+credit programs.
+The initial investment is therefore essentially intellectual rather than financial. The costs that do
+arise are operational in nature and begin only at the launch phase.
+Detailed cost structure
+Table 3: Detailed year 1 cost structure
+Cost category Description Annual cost
+(DZD)
+Domain name registration .com or .dz domain 2,000
+Cloud hosting (prototype
+phase)
+V ercel and Render free tier 0
+Cloud hosting
+(post-launch)
+Basic VPS server from month 6 onward 30,000
+AI API usage Claude or OpenAI API calls, estimated at
+5,000 calls per month at launch
+12,000
+Payment gateway setup Chargily integration and transaction fees,
+around 2%
+6,000
+Marketing: university
+workshops
+Printed materials, room booking, and
+refreshments per event × 3
+30,000
+Marketing: social media Sponsored posts on LinkedIn and Instagram 10,000
+Communication and
+collaboration tools
+Notion Pro and GitHub Pro 4,000
+Miscellaneous and
+contingency
+Unforeseen technical or administrative costs 10,000
+Total estimated year 1
+budget
+104,000 DZD
+Financing sources
+The project will be financed through three complementary channels. The primary source during
+year 0 and the prototype phase is institutional support from the university incubator affiliated with
+CNESIIU, which covers workspace and mentorship at no cost. The secondary source is cloud
+startup credit programs from AWS and Google Cloud, which can provide the equivalent of 50,000
+to 150,000 DZD in infrastructure credits to qualifying academic projects, effectively eliminating
+server costs for the first year of commercial operation. The tertiary source, beginning in year 1, is
+subscription revenue from paying users as described in section 2 below.
+No bank loan is anticipated during the first two years of operation given the low capital require-
+ment of a digital service business. If external financing becomes necessary at the scaling phase, the
+ANSEJ and CNAC programs available to Algerian young entrepreneurs represent the most acces-
+sible funding mechanisms for a team of this profile.
+27
+
+--- PAGE 28 ---
+Repayment structure
+Since no debt financing is planned in year 1, there is no repayment schedule to present for that
+period. In the event that a structured financing instrument is used at the scaling phase in year 3,
+repayments would be drawn from subscription revenue which by that point is projected to exceed
+operating costs comfortably as shown in section 3.
+5.2 Revenue: Chiffre d’Affaires
+Our revenue model is a freemium subscription structure. The free tier allows users to process up
+to three datasets per month and access the cleaning and basic visualization features. The paid tier
+at 500 DZD per month removes all usage limits, unlocks the predictive analysis modules, enables
+PDF report export, and includes the Python script download feature.
+We present two scenarios for projected revenue across the first five years of operation.
+This financial table is presented in the annex for readability.
+The optimistic scenario assumes successful partnerships with two universities by month 8, three
+promotional workshops generating strong word-of-mouth, and a social media campaign reaching
+the target SME audience effectively. The pessimistic scenario assumes slower adoption due to
+digital literacy barriers and conservative uptake among SMEs, with growth driven primarily by
+individual student users rather than business clients.
+In both scenarios the unit economics are favorable: the marginal cost of serving one additional user
+is near zero once the platform is built, since no additional human labor or physical resource is con-
+sumed per session. This means that as the user base grows, profit margins improve automatically.
+28
+
+--- PAGE 29 ---
+5.3 Expected Income Statement: Comptes de Résultats Escomptés
+Projected income statement : DzDataAutomate (in DZD thousands)
+This financial table is presented in the annex for readability.
+Under the pessimistic scenario the platform operates at a small loss in years N and N+1, reaching
+breakeven during year N+2. This is manageable given the absence of debt and the very low fixed
+cost base of a digital service platform.
+Working Capital Requirement (BFR)
+The working capital requirement for our platform is structurally favorable and close to zero for the
+following reason: users pay their subscription at the beginning of the month before consuming the
+service, meaning we receive cash before incurring the corresponding operating costs. There are
+no physical stocks to finance, no supplier payment delays to bridge, and no client invoicing delays
+since payment is processed automatically at subscription renewal. This pay-before-use model is
+one of the most significant financial advantages of a SaaS business model compared to a physical
+product business.
+BFR = Client receivables + Stock — Supplier payables = 0 + 0 — 0 = approximately 0 DZD
+This means the platform requires no working capital financing and can self-fund its operations from
+the first month of positive revenue.
+29
+
+--- PAGE 30 ---
+5.4 Treasury Plan: Plan de Trésorerie
+This financial table is presented in the annex for readability.
+Receipts grow gradually month by month as new subscriptions accumulate and word-of-mouth
+referrals from university workshops bring in new paying users. Expenditures are highest in the
+first three months due to launch marketing activities and stabilize from month 4 onward as fixed
+infrastructure costs dominate.
+The platform reaches its monthly breakeven point in month 4 and begins generating positive monthly
+cash flow from month 5. The cumulative cash balance turns positive in month 8, meaning the plat-
+form has fully recovered its initial operating investment by the end of the first year with a cumulative
+surplus of 188,000 DZD.
+This trajectory confirms that the project is financially self-sustaining within its first year of commer-
+cial operation without requiring any external debt financing, and positions it for accelerated growth
+in year 2 as the subscription base continues to compound.
+30
+
+--- PAGE 31 ---
+CHAPTER 6
+PROTOTYPE
+31
+
+--- PAGE 32 ---
+6.1 Overview of the Prototype
+The experimental prototype presented in this chapter constitutes the initial operational version of
+the DzDataAutomate platform, developed over the course of the project period by the three-member
+founding team. In accordance with the requirements of the Arrêté Ministériel 1275, this prototype
+is presented in digital form as a fully navigable web application, would be accessible from any
+standard web browser without requiring installation on the user’s device.
+The prototype implements the complete five-stage service delivery pipeline described in Chapter
+4 of this mémoire: Capture, Clean, Visualize, Understand, and Act. Each stage is represented by
+a dedicated screen within the interface, and the user is guided through the pipeline by a persistent
+progress indicator that remains visible throughout the entire session, allowing the user to locate
+themselves within the workflow at any moment.
+The following six figures illustrate the prototype in its current state, corresponding to the six princi-
+pal screens of the application. Each screen is described in relation to the service delivery architecture
+presented in Figure 1 of Chapter 4, so that the jury may verify the correspondence between the de-
+sign principles articulated in the earlier axes of this mémoire and their concrete implementation in
+the prototype.
+The interface adopts a dark professional visual theme consistent with the platform’s positioning as
+a serious business tool, while maintaining the accessibility and clarity of language required to serve
+non-technical users. All labels, instructions, and system messages displayed to the user are written
+in plain business language, with no technical jargon visible on any screen accessible to a standard
+user account.
+6.2 Screen-by-Screen Description
+6.2.1 User Registration and Professional Domain Selection (Sign-up Screen)
+The first screen encountered by a new user is the account creation interface, which fulfills a dual
+function within the service delivery pipeline. In addition to collecting the user’s basic identification
+information: full name, email address, and password, this screen constitutes the implementation of
+Stage 0 of the pipeline, namely the capture of the user’s intent profile before any data is uploaded
+or processed.
+The central element of this screen is the professional domain selection panel, which presents eight
+clearly labeled activity sectors as clickable visual cards: Sales, IT/Operations, Finance, Marketing,
+Logistics, HR, Security, and Creative. The user is asked to select the domain that best describes their
+professional context. This selection is not administrative; it is stored by the system as the user’s
+intent profile and carried forward through every subsequent stage of the session. It determines the
+language in which the AI assistant will formulate its suggestions at Stage 4, the types of analyses
+that will be prioritized at Stage 5, and the terminology used in the downloadable report generated
+at the end of the session.
+This design choice, capturing intent at the point of registration rather than mid-session, reflects the
+platform’s commitment to personalizing the analytical experience from the very first interaction.
+The user is never asked to configure a model or select an algorithm; they are simply asked who they
+are and what domain they work in, using the vocabulary of their professional world rather than the
+vocabulary of data science.
+32
+
+--- PAGE 33 ---
+Figure 4: User registration and professional domain selection screen
+6.2.2 Main Dashboard and Data Upload (Home Screen)
+Upon successful registration and login, the user is directed to the main dashboard, which serves as
+the platform’s primary entry point for each new analytical session. The interface presents a single,
+unambiguous call to action: the user is invited to upload a data file in CSV format via a drag-and-
+drop zone, or to connect a structured data source directly.
+The upload zone is positioned at the center of the screen and accompanied by three trust signals
+displayed beneath the primary action buttons: data encryption, compliance certification, and API
+availability. These indicators are deliberately placed at the point of maximum user hesitation, the
+moment of deciding whether to share business data with the platform, and directly respond to the
+data sovereignty concerns identified as a principal adoption barrier in the Algerian market.
+Three feature cards displayed below the upload zone introduce the platform’s main functional areas:
+Smart Analytics, Pipeline Studio, and Integrations. These cards signal to the user that the platform
+is a complete analytical environment rather than a single-purpose tool, and establish expectations
+for the capabilities they will encounter as they progress through the pipeline.
+The navigation sidebar, accessible throughout the entire session, provides access to the Dashboard
+and Projects giving more experienced users the ability to navigate non-linearly between their active
+projects and historical sessions.
+33
+
+--- PAGE 34 ---
+Figure 5: Main dashboard and data upload screen
+6.2.3 Data Preview and Structural Validation (Data Passport Screen)
+Following file upload, the system performs an immediate automated scan of the dataset and presents
+the results on the Data Passport screen, which corresponds to the output of Stage 1 of the service
+delivery pipeline. This screen is the first point at which the user sees their own data reflected back
+to them by the platform, and its design is therefore critical to building confidence in the system’s
+reliability.
+The screen displays the first rows of the uploaded dataset in a structured, readable table format.
+In the illustrated prototype, the file is identified as sales_Q3_2024.csv, containing 2,450 rows and
+8 columns. The data preview shows transaction records including transaction identifiers, product
+categories, customer segments, regional information, sale dates, revenue values in Algerian Dinars,
+and transaction status indicators. The sample rows shown span multiple Algerian cities: Algiers,
+Oran, Constantine, Annaba, and Setif, demonstrating that the prototype has been tested with data
+representative of the Algerian business context.
+A system notification displayed at the bottom of the screen informs the user in plain language that
+the platform has detected inconsistent date formats in 14% of rows, and proposes to apply auto-
+34
+
+--- PAGE 35 ---
+matic correction at the next step. This proactive detection and communication of data quality is-
+sues, expressed in non-technical terms and accompanied by a clear proposed action, exemplifies the
+platform’s approach of guiding the user through the analytical process rather than requiring them to
+identify and resolve data problems independently.
+The progress indicator at the top of the screen confirms that Stage 1 (Capture) is complete and
+that Stage 2 (Clean) is the next step, with the remaining stages: Visualize, Understand, and Act,
+displayed ahead in the pipeline.
+Figure 6: Data preview and structural validation screen
+6.2.4 Automated Data Cleaning and Quality Report (Data Profile Analysis Screen)
+The Data Profile Analysis screen corresponds to Stage 2 of the service delivery pipeline and repre-
+sents the prototype’s implementation of the automated data cleaning functionality described in Axis
+2 and Chapter 4 of this mémoire. This screen is among the most important for the jury demonstra-
+tion, as it makes the value of automated preprocessing immediately visible and quantifiable.
+Four summary metric cards are displayed prominently at the top of the content area, presenting the
+key structural characteristics of the dataset: total number of rows (42.8 million in the illustrated
+35
+
+--- PAGE 36 ---
+configuration), number of active columns (156), duplication rate (0.42%, flagged as approaching
+the critical threshold of 1%), and data freshness indicator (2.4 minutes, confirmed within service
+level agreement parameters).
+Below the summary cards, the system presents a structured table of identified data integrity issues,
+organized by issue type, affected column name, number of occurrences, severity classification, and
+recommended corrective action. The prototype identifies four categories of issues in the illustrated
+dataset: hard duplicates affecting 142,892 rows in the consumer identifier column, classified as
+critical with a one-click deduplication action available; statistical outliers in the transaction amount
+column, classified as advisory with an investigation option; null constraint violations affecting 8,291
+rows in the email address column, classified as critical with an auto-fill correction proposed; and a
+schema drift issue in the metadata column, classified as advisory with a re-mapping option.
+Each issue is presented in plain language with a concrete, actionable response. The user is never
+required to understand what a Z-score outlier is or what schema drift means technically; they are
+simply presented with a description of the problem and a button to resolve it. This implementation
+directly corresponds to the step-by-step cleaning mode described in the production plan, in which
+the platform pauses at each detected issue and presents the recommended option highlighted for the
+user’s confirmation.
+The pipeline progress indicator confirms that the Capture stage is complete and that the Clean stage
+is currently active, maintaining the user’s spatial awareness within the five-stage workflow.
+36
+
+--- PAGE 37 ---
+Figure 7: Automated data cleaning and quality report screen
+6.2.5 Interactive Visualization and Insight Generation (Pipeline Visualize Screen)
+The Insight Generation screen corresponds to Stage 3 of the service delivery pipeline and imple-
+ments the automated visualization functionality described in the production plan. This screen is
+reached after the data cleaning stage is complete and the cleaned dataset has been validated by the
+user, and it represents the point at which the platform begins translating structured data into visual
+business intelligence.
+The screen is organized into two panels. The left panel presents the Chart Configuration interface,
+which allows the user to select a visualization type from four available options: bar chart, line
+chart, network graph, and composite chart, and to specify the dimensions to be plotted using simple
+dropdown selectors for the horizontal axis and vertical axis. The column names available in the
+dropdowns correspond directly to the columns detected in the user’s uploaded dataset, so the user is
+always working with the names they recognize from their own data rather than with abstract variable
+identifiers.
+The right panel renders a live preview of the selected chart configuration, updating in real time
+as the user adjusts the parameters in the left panel. In the illustrated prototype, the chart displays
+revenue by product category across five sectors: Technology, Home, Fashion, Food, and Sports,
+37
+
+--- PAGE 38 ---
+allowing immediate visual identification of the highest and lowest performing categories.
+A cleaned dataset statistics summary at the bottom of the left panel confirms that 12,482 rows
+have been analyzed and that the dataset has achieved a data quality score of 98.4%, giving the user
+quantitative confidence in the reliability of the visualizations being generated.
+An AI suggestion card, visible at the bottom of the right panel, illustrates the proactive intelligence of
+the platform: the system has autonomously detected a significant correlation between promotional
+activity and total revenue in the Food category, and proposes to generate an automated drill-down
+chart to explore this pattern further. This suggestion is generated from the statistical profile of
+the cleaned dataset and presented in plain business language, without requiring the user to have
+formulated the question themselves.
+Figure 8: Interactive visualization and insight generation screen
+6.2.6 AI-Assisted Analysis and Strategic Recommendations (AI Strategic Insights Screen)
+The AI Strategic Insights screen corresponds to Stage 4 (Understand) of the service delivery pipeline
+and constitutes the prototype’s most distinctive functional contribution. This screen is the point at
+which the locally deployed AI assistant processes the data profile and the user’s intent, and returns
+specific, actionable analytical findings expressed in the language of the user’s business domain.
+The pipeline progress indicator at the top of the screen shows that the Capture, Clean, and Visualize
+38
+
+--- PAGE 39 ---
+stages are complete, and that the Understand stage is currently active, with the Act stage remaining.
+This confirms to both the user and the jury that the prototype covers four of the five pipeline stages
+in its current implementation.
+The left panel displays the Data Context summary, presenting three real-time system indicators:
+processing load, model accuracy at 99.4% classified as stable, and system entropy at 0.02 classified
+as critical. These indicators confirm that the analysis is running on real data and that the system
+has identified a condition requiring attention. A Pipeline Status panel below lists the processing
+streams associated with the active session, indicating their synchronization status.
+The central panel implements the Nova Strategic Core interface, which is the prototype’s realiza-
+tion of the AI-assisted analysis and suggestion system described in Section 2.2.2 of the innovative
+aspects chapter. The AI assistant has processed the data profile together with the user’s declared
+professional domain, and has returned a specific, contextualized finding: a 14% latency increase
+has been identified in a named distribution cluster, attributed to a surge in unoptimized data from
+a specific sector, with a concrete corrective action proposed. Two response options are offered
+to the user: Execute Patch, which applies the recommended action automatically, and Simulate
+Only, which previews the effect of the action before committing, corresponding respectively to the
+automatic mode and the step-by-step controlled mode described in the production plan.
+The natural language input field at the bottom of the panel allows the user to ask follow-up ques-
+tions about their data in plain language. The AI assistant processes these questions locally, without
+transmitting any raw data to external servers, in direct implementation of the privacy-preserving
+architecture described in Section 2.2.4 of the innovative aspects chapter. The user’s data remains
+on their own infrastructure throughout the entire interaction.
+39
+
+--- PAGE 40 ---
+Figure 9: AI-assisted analysis and strategic recommendations screen
+6.2.7 Session Results and Export Dashboard
+The Project Dashboard screen consolidates the terminal outputs of the analytical pipeline, corre-
+sponding to the report generation and session conclusion stages. The header identifies the active
+project by source filename and structural metadata, while a top navigation bar offers non-linear
+access to preceding stages via Refresh, Preview, Profile, and Modify Pipeline controls.
+The central workspace presents three primary deliverable cards. The Download Report card exports
+a structured PDF documenting the complete session: dataset characteristics, cleaning log, visual-
+izations, and AI-generated insights. The Download Cleaned CSV card provides the fully prepro-
+cessed dataset, deduplicated, imputed, and standardized, for external use or archival as a validated
+data source. The Download Notebook card delivers a reproducible Python script that sequentially
+recreates every pipeline operation, serving both as a transparency artifact and as a foundation for
+technical users seeking to extend the analysis independently.
+Beneath the export cards, a preview table displays the first twenty rows of the cleaned output,
+confirming structural integrity and formatting consistency. The left sidebar maintains a “Recent
+40
+
+--- PAGE 41 ---
+Pipelines” history, establishing the persistence layer for longitudinal project management. Collec-
+tively, this screen operationalizes the platform’s core value proposition: a user enters with a raw
+CSV file and exits with a cleaned dataset, executive report, strategic insights, and reproducible code,
+generated automatically without manual programming.
+Figure 10: Session results and export dashboard
+41
+
+--- PAGE 42 ---
+Conclusion
+The work presented in this memoir demonstrates that the technical and strategic foundations of
+DzDataAutomate are sound, and that the platform occupies a meaningful and defensible position in
+a market that no existing solution currently serves.
+From a technical standpoint, the five-stage pipeline : intent capture, data ingestion, automated clean-
+ing, AI-assisted analysis suggestion, and model execution , has been implemented as a functional
+prototype and validated against representative Algerian business data. The platform successfully
+handles the core operations of the data science workflow without requiring any technical input from
+the user, and the locally deployed AI assistant generates contextually relevant, plain-language ana-
+lytical suggestions without transmitting raw data to external servers. The architecture is grounded
+entirely in open-source components, which ensures that the cost structure remains viable for the
+target user segment and that the platform can be maintained and extended without dependency on
+proprietary infrastructure.
+From a strategic standpoint, the analysis conducted in Chapter 3 confirms that the platform enters
+a market with no direct local competitor and a well-defined unmet need. The Algerian SME sec-
+tor, the student and researcher community, and the NGO ecosystem collectively represent a large
+and growing addressable market for which the cost, complexity, and cloud dependency of interna-
+tional AutoML platforms constitute insurmountable barriers. DzDataAutomate’s combination of
+local deployment, French and Arabic language orientation, freemium pricing, and browser-based
+accessibility positions it as the natural first choice for this segment, and its privacy-preserving archi-
+tecture directly addresses the data sovereignty concerns that represent the primary adoption barrier
+in the Algerian digital context.
+From a financial standpoint, the projections presented in Chapter 5 confirm that the platform can
+reach operational self-sufficiency within its first year of commercial operation under realistic as-
+sumptions, with no requirement for debt financing and a working capital structure that is inherently
+favorable due to the subscription-before-use payment model. The open-source technology stack
+and zero-cost hosting strategy during the prototype phase eliminate the capital barriers that typi-
+cally constrain early-stage software ventures.
+The prototype presented in Chapter 6 constitutes the first concrete realization of these principles and
+demonstrates that the platform’s design philosophy translates effectively into a navigable, coherent
+user experience. The screens implemented cover four of the five pipeline stages and provide the jury
+with direct evidence that the platform’s most distinctive features : the intent-capture interface, the
+automated cleaning report, the interactive visualization engine, and the AI strategic insights panel ,
+function as described in the preceding chapters.
+Several directions for future development follow naturally from the work presented here. The in-
+tegration of additional analysis pattern modules ( particularly clustering, anomaly detection, and
+time series decomposition ) will broaden the range of analytical needs the platform can address
+without requiring changes to the core architecture. The development of an Arabic-language inter-
+face layer will remove the final linguistic barrier separating the platform from the full breadth of its
+target market. The establishment of formal partnership agreements with university incubators and
+selected SME beta partners will accelerate the transition from prototype to commercial product and
+generate the early user testimonials that are essential to market credibility.
+DzDataAutomate begins as a student project and an academic deliverable. Its ambition, however,
+is larger: to demonstrate that advanced data analysis capabilities can be made genuinely accessible
+to the organizations and individuals who need them most, in the market where they have been most
+systematically overlooked, and to establish a locally developed platform as the reference solution
+for data-driven decision-making in Algeria and the broader North African region. The foundations
+laid in this memoir constitute the first step toward that objective.
+42
+
+--- PAGE 43 ---
+APPENDIX
+ANNEX
+43
+
+--- PAGE 44 ---
+A Financial Tables
+Table 4: Revenue detail — DzDataAutomate
+In DZD N-2 N-1 N N+1 N+2 N+3 N+4 N+5
+Product A — Paid subscription (optimistic scenario)
+Quantity of subscriptions – – 600 2,400 4,800 8,400 12,000 16,800
+Price per subscription (DZD) – – 500 500 500 500 500 500
+Subscription revenue – – 300,000 1,200,000 2,400,000 4,200,000 6,000,000 8,400,000
+Total revenue (optimistic) – – 300,000 1,200,000 2,400,000 4,200,000 6,000,000 8,400,000
+Product A — Paid subscription (pessimistic scenario)
+Quantity of subscriptions – – 180 600 1,440 3,000 4,800 7,200
+Price per subscription (DZD) – – 500 500 500 500 500 500
+Subscription revenue – – 90,000 300,000 720,000 1,500,000 2,400,000 3,600,000
+Total revenue (pessimistic) – – 90,000 300,000 720,000 1,500,000 2,400,000 3,600,000
+44
+
+--- PAGE 45 ---
+Table 5: Projected income statement — DzDataAutomate
+In Thousands DZD N-2 N-1 N N+1 N+2 N+3 N+4 N+5
+Sales and ancillary revenue – – 300 1,200 2,400 4,200 6,000 8,400
+V ariation in finished goods stock – – 0 0 0 0 0 0
+Capitalized production – – 0 0 0 0 0 0
+Operating grants – – 0 0 0 0 0 0
+Production of the period – – 300 1,200 2,400 4,200 6,000 8,400
+Purchases consumed – – 0 0 0 0 0 0
+External services and other consumption – – 102 195 336 489 642 807
+Consumption of the period – – 102 195 336 489 642 807
+Value added from operations – – 198 1,005 2,064 3,711 5,358 7,593
+Personnel costs – – 0 120 240 360 480 600
+Taxes and similar contributions – – 0 0 0 0 0 0
+Gross operating surplus – – 198 885 1,824 3,351 4,878 6,993
+Other operational revenue – – 0 0 0 0 0 0
+Other operational charges – – 10 15 20 25 30 35
+Depreciation and provisions – – 0 0 0 0 0 0
+Recovery on value losses and provisions – – 0 0 0 0 0 0
+Operating result – – +188 +870 +1,804 +3,326 +4,848 +6,958
+Financial revenue – – 0 0 0 0 0 0
+Financial charges – – 0 0 0 0 0 0
+Financial result – – 0 0 0 0 0 0
+Ordinary result before tax – – +188 +870 +1,804 +3,326 +4,848 +6,958
+Tax on ordinary result (IBS 19%) – – 0 165 343 632 921 1,322
+Deferred tax on ordinary result – – 0 0 0 0 0 0
+Total revenue from ordinary activities – – 300 1,200 2,400 4,200 6,000 8,400
+Total charges from ordinary activities – – 112 330 596 874 1,152 1,442
+Net result from ordinary activities – – +188 +705 +1,461 +2,694 +3,927 +5,636
+Extraordinary items (revenue) – – 0 0 0 0 0 0
+Extraordinary items (charges) – – 0 0 0 0 0 0
+Extraordinary result – – 0 0 0 0 0 0
+NET RESULT OF THE PERIOD – – +188 +705 +1,461 +2,694 +3,927 +5,636
+45
+
+--- PAGE 46 ---
+Table 6: Treasury plan — DzDataAutomate (in DZD thousands)
+In Thousands DZD N-2 N-1 N N+1 N+2 N+3 N+4 N+5
+Cash flows from operating activities
+Net result of the period – – 188 705 1,461 2,694 3,927 5,636
+Adjustments for:
+Depreciation and provisions – – 0 0 0 0 0 0
+V ariation in deferred taxes – – 0 0 0 0 0 0
+V ariation in stock – – 0 0 0 0 0 0
+V ariation in clients and other receivables – – 0 0 0 0 0 0
+V ariation in suppliers and other payables – – 0 0 0 0 0 0
+Net gains or losses on disposals – – 0 0 0 0 0 0
+Cash flows generated by operations (A) 0 0 188 705 1,461 2,694 3,927 5,636
+Cash flows from investing activities
+Payments on acquisition of fixed assets – – 0 0 0 0 0 0
+Receipts on disposal of fixed assets – – 0 0 0 0 0 0
+Impact of consolidation scope changes – – 0 0 0 0 0 0
+Cash flows from investing activities (B) 0 0 0 0 0 0 0 0
+Cash flows from financing activities
+Dividends paid to shareholders – – 0 0 0 0 0 0
+Capital increase / ASF share – – 0 0 0 0 0 0
+Capital increase / Startup founder share – – 0 0 0 0 0 0
+Injection into ASF current account – – 0 0 0 0 0 0
+ASF capital repayments (nominal value) – – 0 0 0 0 0 0
+ASF current account repayments – – 0 0 0 0 0 0
+Cash flows from financing activities (C) – – 0 0 0 0 0 0
+Variation in cash for the period (A+B+C) 0 0 188 705 1,461 2,694 3,927 5,636
+Opening cash balance (beginning of period) – – 0 188 893 2,354 5,048 8,975
+Closing cash balance (end of period) – – 188 893 2,354 5,048 8,975 14,611
+Cash variation 0 0 188 705 1,461 2,694 3,927 5,636
+46
+
+--- PAGE 47 ---
+B Business Model Canvas
+Figure 11: Business Model Canvas of DzDataAutomate
+47
+

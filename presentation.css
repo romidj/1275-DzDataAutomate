@@ -1,0 +1,1078 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap');
+
+:root {
+    /* Colors */
+    --accent: #a855f7;
+    --accent-glow: rgba(168, 85, 247, 0.15);
+    --accent-glow-strong: rgba(168, 85, 247, 0.4);
+    --accent-dark: #440270;
+    
+    /* Dark Theme */
+    --bg-dark: #080c09;
+    --text-dark: #e2e8f0;
+    --text-muted-dark: #94a3b8;
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-border-active: rgba(255, 255, 255, 0.2);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    
+    /* Light Theme (For Slides 1 & 16) */
+    --bg-light: #ffffff;
+    --text-light: #0f172a;
+    --text-muted-light: #475569;
+    --glass-bg-light: rgba(8, 12, 9, 0.02);
+    --glass-border-light: rgba(8, 12, 9, 0.06);
+    --glass-shadow-light: 0 8px 32px 0 rgba(8, 12, 9, 0.05);
+
+    /* Animation Timing */
+    --transition-speed: 0.5s;
+    --transition-easing: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+}
+
+/* App Layout */
+.presentation-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-deck {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100%;
+    background: rgba(8, 12, 9, 0.95);
+    backdrop-filter: blur(20px);
+    border-right: 1px solid var(--glass-border);
+    z-index: 1000;
+    transition: left 0.4s var(--transition-easing);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+}
+
+.sidebar.open {
+    left: 0;
+    box-shadow: 10px 0 40px rgba(0, 0, 0, 0.8);
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 1001;
+    width: 48px;
+    height: 48px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    color: var(--text-dark);
+}
+
+.sidebar-toggle:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.sidebar-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sidebar-title span {
+    color: var(--accent);
+}
+
+.slide-menu-list {
+    flex: 1;
+    overflow-y: auto;
+    list-style: none;
+}
+
+.slide-menu-item {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    color: var(--text-muted-dark);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.slide-menu-item:hover, .slide-menu-item.active {
+    background: var(--glass-bg);
+    color: var(--accent);
+    border-left: 3px solid var(--accent);
+}
+
+/* Slide Base Styles */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.98) translateY(10px);
+    transition: opacity var(--transition-speed) var(--transition-easing),
+                transform var(--transition-speed) var(--transition-easing),
+                visibility var(--transition-speed) var(--transition-easing);
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 6rem 4rem 6rem;
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translateY(0);
+    z-index: 10;
+}
+
+/* Alternating Theme Styling */
+.slide.light-theme {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+.slide.light-theme h1,
+.slide.light-theme h2,
+.slide.light-theme h3 {
+    color: var(--text-light);
+}
+
+.slide.light-theme p,
+.slide.light-theme li {
+    color: var(--text-muted-light);
+}
+
+.slide.light-theme .glass-card {
+    background: var(--glass-bg-light);
+    border-color: var(--glass-border-light);
+    box-shadow: var(--glass-shadow-light);
+}
+
+.slide.light-theme .glass-card:hover {
+    border-color: var(--accent);
+}
+
+/* Glassmorphism Cards */
+.glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: var(--backdrop-blur);
+    -webkit-backdrop-filter: var(--backdrop-blur);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: var(--glass-shadow);
+    transition: all 0.3s var(--transition-easing);
+}
+
+.glass-card:hover {
+    border-color: var(--glass-border-active);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+.glass-card.interactive-active {
+    border-color: var(--accent);
+    box-shadow: 0 0 25px var(--accent-glow);
+}
+
+/* Typography */
+h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.75rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.light-theme h1 {
+    color: var(--text-light);
+}
+
+h1 span.highlight {
+    color: var(--accent);
+    position: relative;
+    display: inline-block;
+}
+
+h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+h3 span.highlight {
+    color: var(--accent);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-muted-dark);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utility Layouts */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    height: 100%;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.grid-2x2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    height: calc(100% - 6rem);
+}
+
+.flex-row {
+    display: flex;
+    gap: 2rem;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Floating Glass Background Elements */
+.bg-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.15;
+}
+
+.bg-blob-1 {
+    top: 10%;
+    right: 10%;
+    width: 400px;
+    height: 400px;
+    background: var(--accent);
+    animation: float-blob 20s infinite alternate;
+}
+
+.bg-blob-2 {
+    bottom: 10%;
+    left: 5%;
+    width: 300px;
+    height: 300px;
+    background: var(--accent-dark);
+    animation: float-blob 15s infinite alternate-reverse;
+}
+
+@keyframes float-blob {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(40px, -50px) scale(1.1); }
+    100% { transform: translate(-20px, 30px) scale(0.9); }
+}
+
+/* Header & Footer Overlays */
+.header-overlay {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 100;
+}
+
+.estin-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.light-theme .estin-logo {
+    background: var(--glass-bg-light);
+    border-color: var(--glass-border-light);
+}
+
+.footer-overlay {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 3rem;
+    right: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-size: 0.8rem;
+    color: var(--text-muted-dark);
+}
+
+.light-theme .footer-overlay {
+    color: var(--text-muted-light);
+}
+
+.slide-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.control-btn {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-dark);
+    transition: all 0.2s;
+}
+
+.control-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.light-theme .control-btn {
+    background: var(--glass-bg-light);
+    border-color: var(--glass-border-light);
+    color: var(--text-light);
+}
+
+.progress-bar-container {
+    flex: 1;
+    max-width: 300px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    margin: 0 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.light-theme .progress-bar-container {
+    background: rgba(8, 12, 9, 0.1);
+}
+
+.progress-bar-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: var(--accent);
+    box-shadow: 0 0 8px var(--accent);
+    transition: width 0.3s ease;
+}
+
+/* Presenter Notes Overlay */
+.presenter-notes-panel {
+    position: fixed;
+    bottom: -320px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: rgba(8, 12, 9, 0.98);
+    backdrop-filter: blur(25px);
+    border-top: 2px solid var(--accent);
+    z-index: 2000;
+    padding: 2rem 4rem;
+    transition: bottom 0.4s var(--transition-easing);
+    box-shadow: 0 -15px 40px rgba(0,0,0,0.8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.presenter-notes-panel.open {
+    bottom: 0;
+}
+
+.notes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.notes-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.notes-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-muted-dark);
+    font-size: 1.25rem;
+    transition: color 0.2s;
+}
+
+.notes-close:hover {
+    color: var(--accent);
+}
+
+.notes-content {
+    flex: 1;
+    overflow-y: auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #f1f5f9;
+}
+
+.notes-content ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.notes-content li {
+    margin-bottom: 0.5rem;
+    color: #cbd5e1;
+}
+
+/* Custom CSS Components for Slides */
+
+/* Glass calculator on Slide 2 */
+.glass-calc-wrapper {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    max-height: 380px;
+    perspective: 1000px;
+}
+
+.glass-calc {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    padding: 1.5rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7),
+                inset 0 0 20px rgba(255, 255, 255, 0.02);
+    transform: rotateY(-15deg) rotateX(10deg);
+    transition: transform 0.5s;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.glass-calc:hover {
+    transform: rotateY(-5deg) rotateX(5deg);
+    border-color: var(--accent);
+}
+
+.calc-screen {
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1.25rem;
+    font-family: 'Courier New', monospace;
+    font-size: 1.75rem;
+    color: var(--accent);
+    text-shadow: 0 0 10px var(--accent);
+}
+
+.calc-buttons {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+}
+
+.calc-btn {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: var(--text-muted-dark);
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.calc-btn.accent {
+    color: var(--accent);
+    border-color: rgba(57, 255, 20, 0.2);
+    background: rgba(57, 255, 20, 0.02);
+}
+
+.calc-btn:hover {
+    background: var(--accent);
+    color: #000;
+    box-shadow: 0 0 15px var(--accent);
+    border-color: var(--accent);
+}
+
+/* Process pipeline Slide 3 & 10 */
+.pipeline-flow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.pipeline-node {
+    flex: 1;
+    max-width: 160px;
+    text-align: center;
+    position: relative;
+}
+
+.node-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 5;
+    color: var(--text-dark);
+}
+
+.slide.active .pipeline-node:nth-child(1) .node-icon { animation: pulse-node 2s infinite alternate; }
+.slide.active .pipeline-node:nth-child(3) .node-icon { animation: pulse-node 2s infinite alternate 0.4s; }
+.slide.active .pipeline-node:nth-child(5) .node-icon { animation: pulse-node 2s infinite alternate 0.8s; }
+
+@keyframes pulse-node {
+    0% { border-color: var(--glass-border); box-shadow: none; }
+    100% { border-color: var(--accent); box-shadow: 0 0 15px var(--accent-glow-strong); }
+}
+
+.node-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.node-subtitle {
+    font-size: 0.75rem;
+    color: var(--text-muted-dark);
+}
+
+.pipeline-connector {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, var(--glass-border), var(--accent), var(--glass-border));
+    margin: -35px 10px 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Value Cards on Slide 4 */
+.value-cluster {
+    border-left: 2px solid var(--accent);
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.value-cluster h3 {
+    color: var(--accent);
+    margin-bottom: 1rem;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+}
+
+.value-grid-inline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.value-card-mini {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+}
+
+.value-card-mini strong {
+    display: block;
+    color: #fff;
+    margin-bottom: 0.25rem;
+}
+
+.value-card-mini:hover {
+    border-color: var(--accent);
+    background: rgba(57, 255, 20, 0.01);
+}
+
+/* Timeline Slide 5 */
+.milestone-timeline {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 3rem;
+    padding: 0 2rem;
+}
+
+.milestone-timeline::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 2rem;
+    right: 2rem;
+    height: 1px;
+    background: var(--glass-border);
+    z-index: 1;
+}
+
+.milestone-item {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    width: 200px;
+}
+
+.milestone-dot {
+    width: 60px;
+    height: 60px;
+    background: var(--bg-dark);
+    border: 2px solid var(--glass-border);
+    border-radius: 50%;
+    margin: 0 auto 1.5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.25rem;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+.milestone-item:hover .milestone-dot {
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: 0 0 20px var(--accent-glow-strong);
+}
+
+.milestone-stat {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.milestone-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted-dark);
+    line-height: 1.4;
+}
+
+/* 2x2 Grid Slide 6 */
+.quadrant-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quadrant-card .quad-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.05);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+}
+
+.quadrant-card:hover .quad-num {
+    color: var(--accent-glow-strong);
+}
+
+/* Before / After Slide 7 */
+.compare-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.compare-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted-dark);
+}
+
+.compare-card {
+    flex: 1;
+    border-radius: 12px;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid var(--glass-border);
+}
+
+.compare-card.traditional {
+    border-left: 4px solid #ef4444;
+}
+
+.compare-card.dz {
+    border-left: 4px solid var(--accent);
+    background: rgba(57, 255, 20, 0.01);
+}
+
+.compare-card pre {
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.75rem;
+    border-radius: 6px;
+    margin-top: 0.75rem;
+}
+
+/* Positioning Map Slide 8 */
+.position-map {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    border-left: 2px solid var(--glass-border);
+    border-bottom: 2px solid var(--glass-border);
+    margin-top: 1rem;
+}
+
+.axis-label {
+    position: absolute;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted-dark);
+}
+
+.axis-y {
+    top: 50%;
+    left: -70px;
+    transform: rotate(-90deg) translateY(-50%);
+}
+
+.axis-x {
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.map-logo {
+    position: absolute;
+    background: rgba(8, 12, 9, 0.8);
+    border: 1px solid var(--glass-border);
+    padding: 0.5rem 0.85rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+.map-logo:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 12px var(--accent-glow-strong);
+    transform: scale(1.05);
+    z-index: 20;
+}
+
+.map-logo.highlight-brand {
+    background: rgba(57, 255, 20, 0.1);
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: 0 0 20px var(--accent-glow-strong);
+    font-weight: 800;
+    font-size: 0.85rem;
+}
+
+.map-quadrant-label {
+    position: absolute;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.15);
+    pointer-events: none;
+}
+
+/* Comparative Table Slide 9 */
+.sleek-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.sleek-table th {
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 2px solid var(--glass-border);
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.sleek-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--glass-border);
+    color: var(--text-muted-dark);
+}
+
+.sleek-table tr:hover td {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.01);
+}
+
+.sleek-table td.highlight-col, .sleek-table th.highlight-col {
+    background: rgba(57, 255, 20, 0.03);
+    border-left: 1px solid rgba(57, 255, 20, 0.1);
+    border-right: 1px solid rgba(57, 255, 20, 0.1);
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.check-icon {
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.cross-icon {
+    color: #ef4444;
+}
+
+/* SVG Chart Styles */
+.chart-container {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-svg {
+    width: 100%;
+    height: 100%;
+    max-height: 280px;
+}
+
+.donut-segment {
+    transform-origin: center;
+    transition: stroke-dashoffset 1s ease-out;
+}
+
+.chart-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+}
+
+.legend-text {
+    color: var(--text-muted-dark);
+}
+
+.legend-val {
+    margin-left: auto;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Interactive Line Chart Slide 13 */
+.line-chart-path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    transition: stroke-dashoffset 2s ease-out;
+}
+
+.slide.active .line-chart-path {
+    stroke-dashoffset: 0;
+}
+
+/* Screen mockups Slides 14 & 15 */
+.mockup-screen {
+    width: 100%;
+    height: 100%;
+    background: #0d1310;
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.mockup-header {
+    height: 36px;
+    background: #090e0b;
+    border-bottom: 1px solid var(--glass-border);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 0.5rem;
+}
+
+.mockup-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.mockup-dot.red { background: #ef4444; }
+.mockup-dot.yellow { background: #f59e0b; }
+.mockup-dot.green { background: #10b981; }
+
+.mockup-title-bar {
+    font-size: 0.7rem;
+    color: var(--text-muted-dark);
+    margin-left: 1rem;
+    background: rgba(255,255,255,0.05);
+    padding: 0.1rem 1rem;
+    border-radius: 4px;
+}
+
+.mockup-body {
+    flex: 1;
+    padding: 1rem;
+    font-size: 0.75rem;
+    overflow-y: auto;
+}
+
+/* Responsive Scaling Utilities */
+@media (max-width: 1200px) {
+    .slide {
+        padding: 3rem 4rem 3rem 4rem;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+}
+
+.speaker-notes {
+    display: none;
+}
