@@ -928,7 +928,7 @@ correlation = df["promo"].corr(df["revenue"])
                 </div>
             </section>
 
-                        <!-- SLIDE 14: Prototype Walkthrough Part 1 (Dark Theme) -->
+                                    <!-- SLIDE 14: Prototype Walkthrough Part 1 (Dark Theme) -->
             <section class="slide" id="slide-14">
                 <div style="height: 100%; display: flex; flex-direction: column;">
                     <!-- Top Left Header -->
@@ -937,27 +937,28 @@ correlation = df["promo"].corr(df["revenue"])
                         <h1 style="margin-top: 0; margin-bottom: 0;">Prototype Walkthrough</h1>
                     </div>
 
-                    <!-- Main Content area (More space for screenshots) -->
-                    <div class="grid-2" style="flex: 1; gap: 2rem; min-height: 0;">
-                        <div class="flex-col" style="gap: 1rem; overflow-y: auto;">
+                    <!-- Main Content area -->
+                    <div style="flex: 1; display: flex; flex-direction: column; gap: 1rem; min-height: 0;">
+                        <!-- Cards Row -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
                             <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
-                                <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Stage 1 — Sign-up &amp; Domain Selection</h4>
-                                <p style="font-size: 0.85rem;">Intent captured at registration: 8 professional sector cards. The platform personalises every subsequent step based on this selection.</p>
+                                <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-size: 1.1rem;">Stage 1 — Sign-up &amp; Domain Selection</h4>
+                                <p style="font-size: 0.9rem; line-height: 1.4;">Intent captured at registration: 8 professional sector cards. The platform personalises every subsequent step based on this selection.</p>
                             </div>
 
                             <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
-                                <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Stage 2 — Dashboard &amp; Upload</h4>
-                                <p style="font-size: 0.85rem;">Trust signals (encryption, compliance, API) are placed at the point of maximum hesitation, addressing data-sovereignty concerns.</p>
+                                <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-size: 1.1rem;">Stage 2 — Dashboard &amp; Upload</h4>
+                                <p style="font-size: 0.9rem; line-height: 1.4;">Trust signals (encryption, compliance, API) are placed at the point of maximum hesitation, addressing data-sovereignty concerns.</p>
                             </div>
                         </div>
 
-                        <!-- Screenshots container (Uncropped, obvious) -->
-                        <div class="flex-col" style="gap: 1rem; height: 100%; min-height: 0;">
-                            <div style="flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0;">
-                                <img src="screenshots/Signup - Neon Redesign.png" alt="Sign-up screen" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                        <!-- Screenshots Row -->
+                        <div style="flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; min-height: 0;">
+                            <div style="display: flex; align-items: center; justify-content: center; min-height: 0; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.5rem;">
+                                <img src="screenshots/Signup - Neon Redesign.png" alt="Sign-up screen" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
                             </div>
-                            <div style="flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0;">
-                                <img src="screenshots/Home - Neon Redesign.png" alt="Main dashboard" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                            <div style="display: flex; align-items: center; justify-content: center; min-height: 0; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.5rem;">
+                                <img src="screenshots/Home - Neon Redesign.png" alt="Main dashboard" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
                             </div>
                         </div>
                     </div>
@@ -981,26 +982,27 @@ correlation = df["promo"].corr(df["revenue"])
                     </div>
 
                     <!-- Main Content area -->
-                    <div class="grid-2" style="flex: 1; gap: 2rem; min-height: 0;">
-                        <div class="flex-col" style="gap: 1rem; overflow-y: auto;">
+                    <div style="flex: 1; display: flex; flex-direction: column; gap: 1rem; min-height: 0;">
+                        <!-- Cards Row -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
                             <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
-                                <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Stage 3 — Data Preview</h4>
-                                <p style="font-size: 0.85rem;">Silent scan renders a Data Passport: row count, column types, missing-value distribution, building confidence before processing.</p>
+                                <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-size: 1.1rem;">Stage 3 — Data Preview</h4>
+                                <p style="font-size: 0.9rem; line-height: 1.4;">Silent scan renders a Data Passport: row count, column types, missing-value distribution, building confidence before processing.</p>
                             </div>
 
                             <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
-                                <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Stage 4 — Data Cleaning</h4>
-                                <p style="font-size: 0.85rem;">The cleaning report surfaces integrity issues in plain language with one-click corrective actions (duplicates, nulls, date-formats).</p>
+                                <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-size: 1.1rem;">Stage 4 — Data Cleaning</h4>
+                                <p style="font-size: 0.9rem; line-height: 1.4;">The cleaning report surfaces integrity issues in plain language with one-click corrective actions (duplicates, nulls, date-formats).</p>
                             </div>
                         </div>
 
-                        <!-- Screenshots container (Uncropped, obvious) -->
-                        <div class="flex-col" style="gap: 1rem; height: 100%; min-height: 0;">
-                            <div style="flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0;">
-                                <img src="screenshots/Data Preview - Neon Redesign.png" alt="Data Passport preview" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                        <!-- Screenshots Row -->
+                        <div style="flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; min-height: 0;">
+                            <div style="display: flex; align-items: center; justify-content: center; min-height: 0; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.5rem;">
+                                <img src="screenshots/Data Preview - Neon Redesign.png" alt="Data Passport preview" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
                             </div>
-                            <div style="flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0;">
-                                <img src="screenshots/Clean.png" alt="Cleaning report" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                            <div style="display: flex; align-items: center; justify-content: center; min-height: 0; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.5rem;">
+                                <img src="screenshots/Clean.png" alt="Cleaning report" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
                             </div>
                         </div>
                     </div>
@@ -1024,26 +1026,27 @@ correlation = df["promo"].corr(df["revenue"])
                     </div>
 
                     <!-- Main Content area -->
-                    <div class="grid-2" style="flex: 1; gap: 2rem; min-height: 0;">
-                        <div class="flex-col" style="gap: 1rem; overflow-y: auto;">
+                    <div style="flex: 1; display: flex; flex-direction: column; gap: 1rem; min-height: 0;">
+                        <!-- Cards Row -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
                             <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
-                                <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Live Plotly Configurator</h4>
-                                <p style="font-size: 0.85rem;">Cleaned column names map to x/y selectors. System suggests chart drill-downs.</p>
+                                <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-size: 1.1rem;">Live Plotly Configurator</h4>
+                                <p style="font-size: 0.9rem; line-height: 1.4;">Cleaned column names map to x/y selectors. System suggests chart drill-downs.</p>
                             </div>
 
                             <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
-                                <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Nova Strategic Core</h4>
-                                <p style="font-size: 0.85rem;">Local LLM provides strategic summaries. Includes natural-language follow-up question box.</p>
+                                <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-size: 1.1rem;">Nova Strategic Core</h4>
+                                <p style="font-size: 0.9rem; line-height: 1.4;">Local LLM provides strategic summaries. Includes natural-language follow-up question box.</p>
                             </div>
                         </div>
 
-                        <!-- Screenshots container (Uncropped, obvious) -->
-                        <div class="flex-col" style="gap: 1rem; height: 100%; min-height: 0;">
-                            <div style="flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0;">
-                                <img src="screenshots/vizualization.png" alt="Interactive chart" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                        <!-- Screenshots Row -->
+                        <div style="flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; min-height: 0;">
+                            <div style="display: flex; align-items: center; justify-content: center; min-height: 0; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.5rem;">
+                                <img src="screenshots/vizualization.png" alt="Interactive chart" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
                             </div>
-                            <div style="flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0;">
-                                <img src="screenshots/olama.png" alt="AI insights" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                            <div style="display: flex; align-items: center; justify-content: center; min-height: 0; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 0.5rem;">
+                                <img src="screenshots/olama.png" alt="AI insights" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
                             </div>
                         </div>
                     </div>
