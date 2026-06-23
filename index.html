@@ -928,30 +928,37 @@ correlation = df["promo"].corr(df["revenue"])
                 </div>
             </section>
 
-            <!-- SLIDE 14: Prototype Walkthrough Part 1 (Dark Theme) -->
+                        <!-- SLIDE 14: Prototype Walkthrough Part 1 (Dark Theme) -->
             <section class="slide" id="slide-14">
-                <div class="grid-2" style="height: 100%; gap: 3rem; align-items: center;">
-                    <div class="flex-col" style="gap: 1.5rem;">
+                <div style="height: 100%; display: flex; flex-direction: column;">
+                    <!-- Top Left Header -->
+                    <div style="margin-bottom: 1rem;">
                         <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); display: block;">Prototype Demo - Part 1</span>
-                        <h1 style="margin-bottom: 0;">Prototype Walkthrough</h1>
-
-                        <div class="glass-card" style="padding: 1.25rem; border-left: 3px solid var(--accent);">
-                            <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Stage 1 — Sign-up &amp; Domain Selection</h4>
-                            <p style="font-size: 0.85rem;">Intent captured at registration: 8 professional sector cards (Sales, IT, Finance, Marketing, Logistics, HR, Security, Creative). The platform personalises every subsequent step based on this selection.</p>
-                        </div>
-
-                        <div class="glass-card" style="padding: 1.25rem; border-left: 3px solid var(--accent);">
-                            <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Stage 2 — Dashboard &amp; Upload</h4>
-                            <p style="font-size: 0.85rem;">Trust signals (encryption, compliance, API) are placed at the point of maximum hesitation — when the user decides whether to share business data — directly addressing the data-sovereignty concern.</p>
-                        </div>
+                        <h1 style="margin-top: 0; margin-bottom: 0;">Prototype Walkthrough</h1>
                     </div>
 
-                    <div class="flex-col" style="height: 100%; gap: 1rem;">
-                        <div style="flex: 1; overflow: hidden; border-radius: 12px; border: 1px solid var(--glass-border); box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
-                            <img src="screenshots/Signup - Neon Redesign.png" alt="Sign-up screen with 8 domain selector cards" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;">
+                    <!-- Main Content area (More space for screenshots) -->
+                    <div class="grid-2" style="flex: 1; gap: 2rem; min-height: 0;">
+                        <div class="flex-col" style="gap: 1rem; overflow-y: auto;">
+                            <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
+                                <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Stage 1 — Sign-up &amp; Domain Selection</h4>
+                                <p style="font-size: 0.85rem;">Intent captured at registration: 8 professional sector cards. The platform personalises every subsequent step based on this selection.</p>
+                            </div>
+
+                            <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
+                                <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Stage 2 — Dashboard &amp; Upload</h4>
+                                <p style="font-size: 0.85rem;">Trust signals (encryption, compliance, API) are placed at the point of maximum hesitation, addressing data-sovereignty concerns.</p>
+                            </div>
                         </div>
-                        <div style="flex: 1; overflow: hidden; border-radius: 12px; border: 1px solid var(--glass-border); box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
-                            <img src="screenshots/Home - Neon Redesign.png" alt="Main dashboard with drag-and-drop upload zone" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;">
+
+                        <!-- Screenshots container (Uncropped, obvious) -->
+                        <div class="flex-col" style="gap: 1rem; height: 100%; min-height: 0;">
+                            <div style="flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0;">
+                                <img src="screenshots/Signup - Neon Redesign.png" alt="Sign-up screen" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                            </div>
+                            <div style="flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0;">
+                                <img src="screenshots/Home - Neon Redesign.png" alt="Main dashboard" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -959,36 +966,42 @@ correlation = df["promo"].corr(df["revenue"])
                 <div class="speaker-notes">
                     <ul>
                         <li>Slide 14: Screens 1 &amp; 2 — Sign-up and Dashboard.</li>
-                        <li>The domain selection at registration is central to our UX innovation: intent is captured <em>before</em> any data is uploaded.</li>
-                        <li>The trust signals on the dashboard directly counter data-sharing hesitancy in the Algerian market.</li>
+                        <li>The domain selection at registration is central to our UX innovation: intent is captured before any data is uploaded.</li>
                     </ul>
                 </div>
             </section>
 
             <!-- SLIDE 15: Prototype Walkthrough Part 2 (Dark Theme) -->
             <section class="slide" id="slide-15">
-                <div class="grid-2" style="height: 100%; gap: 3rem; align-items: center;">
-                    <div class="flex-col" style="gap: 1.5rem;">
+                <div style="height: 100%; display: flex; flex-direction: column;">
+                    <!-- Top Left Header -->
+                    <div style="margin-bottom: 1rem;">
                         <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); display: block;">Prototype Demo - Part 2</span>
-                        <h1 style="margin-bottom: 0;">Prototype Walkthrough</h1>
-
-                        <div class="glass-card" style="padding: 1.25rem; border-left: 3px solid var(--accent);">
-                            <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Stage 3 — Data Preview</h4>
-                            <p style="font-size: 0.85rem;">Immediately after upload the system performs a silent scan and renders a structured Data Passport: row count, column types, missing-value distribution, and sample values — building confidence before any processing starts.</p>
-                        </div>
-
-                        <div class="glass-card" style="padding: 1.25rem; border-left: 3px solid var(--accent);">
-                            <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Stage 4 — Data Cleaning</h4>
-                            <p style="font-size: 0.85rem;">The cleaning report surfaces every integrity issue in plain language with one-click corrective actions. Users can resolve duplicates, null constraints, outliers, and date-format drift without writing a single line of code.</p>
-                        </div>
+                        <h1 style="margin-top: 0; margin-bottom: 0;">Prototype Walkthrough</h1>
                     </div>
 
-                    <div class="flex-col" style="height: 100%; gap: 1rem;">
-                        <div style="flex: 1; overflow: hidden; border-radius: 12px; border: 1px solid var(--glass-border); box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
-                            <img src="screenshots/Data Preview - Neon Redesign.png" alt="Data Passport preview screen showing structural scan results" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;">
+                    <!-- Main Content area -->
+                    <div class="grid-2" style="flex: 1; gap: 2rem; min-height: 0;">
+                        <div class="flex-col" style="gap: 1rem; overflow-y: auto;">
+                            <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
+                                <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Stage 3 — Data Preview</h4>
+                                <p style="font-size: 0.85rem;">Silent scan renders a Data Passport: row count, column types, missing-value distribution, building confidence before processing.</p>
+                            </div>
+
+                            <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
+                                <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Stage 4 — Data Cleaning</h4>
+                                <p style="font-size: 0.85rem;">The cleaning report surfaces integrity issues in plain language with one-click corrective actions (duplicates, nulls, date-formats).</p>
+                            </div>
                         </div>
-                        <div style="flex: 1; overflow: hidden; border-radius: 12px; border: 1px solid var(--glass-border); box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
-                            <img src="screenshots/Clean.png" alt="Automated data cleaning report with flagged issues" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;">
+
+                        <!-- Screenshots container (Uncropped, obvious) -->
+                        <div class="flex-col" style="gap: 1rem; height: 100%; min-height: 0;">
+                            <div style="flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0;">
+                                <img src="screenshots/Data Preview - Neon Redesign.png" alt="Data Passport preview" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                            </div>
+                            <div style="flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0;">
+                                <img src="screenshots/Clean.png" alt="Cleaning report" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -996,44 +1009,49 @@ correlation = df["promo"].corr(df["revenue"])
                 <div class="speaker-notes">
                     <ul>
                         <li>Slide 15: Screens 3 &amp; 4 — Data Passport and Cleaning Report.</li>
-                        <li>The Data Passport is the first moment the user sees their own data reflected back — its clarity is critical for building trust.</li>
-                        <li>Cleaning report: highlight that issues are expressed in business language, not technical jargon.</li>
+                        <li>Cleaning report: issues are expressed in business language, not technical jargon.</li>
                     </ul>
                 </div>
             </section>
 
             <!-- SLIDE 16: Prototype Walkthrough Part 3 (Dark Theme) -->
             <section class="slide" id="slide-16">
-                <div class="grid-2" style="height: 100%; gap: 3rem; align-items: center;">
-                    <div class="flex-col" style="gap: 1.5rem;">
+                <div style="height: 100%; display: flex; flex-direction: column;">
+                    <!-- Top Left Header -->
+                    <div style="margin-bottom: 1rem;">
                         <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); display: block;">Prototype Demo - Part 3</span>
-                        <h1 style="margin-bottom: 0;">Prototype Walkthrough</h1>
-
-                        <div class="glass-card" style="padding: 1.25rem; border-left: 3px solid var(--accent);">
-                            <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Live Plotly Configurator</h4>
-                            <p style="font-size: 0.85rem;">Cleaned column names map to x/y selectors. System suggests chart drill-downs (e.g. "We detected correlation in Food sales").</p>
-                        </div>
-
-                        <div class="glass-card" style="padding: 1.25rem; border-left: 3px solid var(--accent);">
-                            <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Nova Strategic Core</h4>
-                            <p style="font-size: 0.85rem;">Local LLM provides strategic summaries (e.g. "14% latency increase identified in West region"). Includes natural-language follow-up question box.</p>
-                        </div>
+                        <h1 style="margin-top: 0; margin-bottom: 0;">Prototype Walkthrough</h1>
                     </div>
 
-                    <div class="flex-col" style="height: 100%; gap: 1rem;">
-                        <div style="flex: 1; overflow: hidden; border-radius: 12px; border: 1px solid var(--glass-border); box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
-                            <img src="screenshots/vizualization.png" alt="Interactive Plotly chart configurator screen" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;">
+                    <!-- Main Content area -->
+                    <div class="grid-2" style="flex: 1; gap: 2rem; min-height: 0;">
+                        <div class="flex-col" style="gap: 1rem; overflow-y: auto;">
+                            <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
+                                <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Live Plotly Configurator</h4>
+                                <p style="font-size: 0.85rem;">Cleaned column names map to x/y selectors. System suggests chart drill-downs.</p>
+                            </div>
+
+                            <div class="glass-card" style="padding: 1rem; border-left: 3px solid var(--accent);">
+                                <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Nova Strategic Core</h4>
+                                <p style="font-size: 0.85rem;">Local LLM provides strategic summaries. Includes natural-language follow-up question box.</p>
+                            </div>
                         </div>
-                        <div style="flex: 1; overflow: hidden; border-radius: 12px; border: 1px solid var(--glass-border); box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
-                            <img src="screenshots/olama.png" alt="Nova Strategic Core AI insights panel powered by local Ollama LLM" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;">
+
+                        <!-- Screenshots container (Uncropped, obvious) -->
+                        <div class="flex-col" style="gap: 1rem; height: 100%; min-height: 0;">
+                            <div style="flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0;">
+                                <img src="screenshots/vizualization.png" alt="Interactive chart" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                            </div>
+                            <div style="flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0;">
+                                <img src="screenshots/olama.png" alt="AI insights" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="speaker-notes">
                     <ul>
-                        <li>Slide 16: Screens 5 &amp; 6 — Visualization configurator and AI Strategic Insights.</li>
-                        <li>The Plotly configurator lets users pick axes from their own column names — no abstract variable identifiers.</li>
+                        <li>Slide 16: Screens 5 &amp; 6 — Visualization and AI Strategic Insights.</li>
                         <li>The Ollama panel processes metadata locally; raw data never leaves the device.</li>
                     </ul>
                 </div>
@@ -1041,22 +1059,23 @@ correlation = df["promo"].corr(df["revenue"])
 
             <!-- SLIDE 17: Prototype Walkthrough Part 4 (Dark Theme) -->
             <section class="slide" id="slide-17">
-                <div class="flex-col" style="height: 100%; justify-content: space-between;">
-                    <div>
-                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); display: block; margin-bottom: 0.5rem;">Prototype Demo - Part 4</span>
-                        <h1 style="margin-bottom: 0.5rem;">Prototype Walkthrough</h1>
-                        <p style="max-width: 750px;">Insights &amp; Actions — the final stage of the pipeline. The session dashboard consolidates the full output: cleaned data, executive report, AI findings, and a reproducible Python notebook.</p>
+                <div style="height: 100%; display: flex; flex-direction: column;">
+                    <!-- Top Left Header -->
+                    <div style="margin-bottom: 1rem;">
+                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); display: block;">Prototype Demo - Part 4</span>
+                        <h1 style="margin-top: 0; margin-bottom: 0.5rem;">Prototype Walkthrough</h1>
+                        <p style="font-size: 0.9rem; max-width: 800px; margin-bottom: 0;">Insights &amp; Actions — the final stage of the pipeline. The session dashboard consolidates the full output: cleaned data, executive report, AI findings, and a reproducible Python notebook.</p>
                     </div>
 
-                    <div style="flex: 1; margin-top: 1.5rem; overflow: hidden; border-radius: 16px; border: 1px solid var(--glass-border); box-shadow: 0 20px 50px rgba(0,0,0,0.7);">
-                        <img src="screenshots/Pipeline_ Visualize - Neon Redesign.png" alt="Session results and export dashboard — final pipeline stage" style="width: 100%; height: 100%; object-fit: cover; object-position: top; display: block;">
+                    <!-- Main Content area (Full size screenshot) -->
+                    <div style="flex: 1; display: flex; align-items: center; justify-content: center; min-height: 0; padding-top: 0.5rem;">
+                        <img src="screenshots/Pipeline_ Visualize - Neon Redesign.png" alt="Session results and export dashboard" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.7);">
                     </div>
                 </div>
 
                 <div class="speaker-notes">
                     <ul>
                         <li>Slide 17: Screen 7 — Session Results &amp; Export Dashboard.</li>
-                        <li>The user enters with a raw CSV and exits with three deliverables: a PDF report, a cleaned dataset, and a reproducible Jupyter notebook.</li>
                         <li>This slide closes the prototype walkthrough section. Transition to the conclusion.</li>
                     </ul>
                 </div>
@@ -1102,141 +1121,16 @@ correlation = df["promo"].corr(df["revenue"])
                         <li>Recap the three foundations of our defense:
                             <ul>
                                 <li><strong>Technically sound:</strong> Core pipeline tested and verified.</li>
-                                <li><strong>Strategically defensible:</strong> Resolving key domestic blockers (confidentiality, cost).</li>
+                                <li><strong>Strategically defensible:</strong> Resolving key domestic blockers.</li>
                                 <li><strong>Financially viable:</strong> Breakeven in year 1.</li>
                             </ul>
                         </li>
-                        <li>Highlight future directions: integration of clustering/time-series, Arabic-language localization, and formalizing incubator partnerships.</li>
+                        <li>Highlight future directions: integration of clustering/time-series, Arabic-language localization.</li>
                         <li>Close the defense: "Thank you for your attention. We are ready to take your questions."</li>
                     </ul>
                 </div>
             </section>
-
-            <!-- SLIDE 15: Walkthrough 2: Visualize & Understand (Dark Theme) -->
-            <section class="slide" id="slide-15">
-                <div class="grid-2" style="height: 100%; gap: 3rem; align-items: center;">
-                    <div class="flex-col">
-                        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 0.5rem; display: block;">Prototype Demo - Part 2</span>
-                        <h1>Insights & Actions</h1>
-                        <p style="margin-bottom: 1.5rem;">
-                            Live mockup representing the execution of Stages 3 and 4 in the platform (Figures 8, 9, 10).
-                        </p>
-                        
-                        <div class="flex-col" style="gap: 1rem;">
-                            <div class="glass-card" style="padding: 1rem; border-left: 2px solid var(--accent);">
-                                <h4 style="color: #fff; margin-bottom: 0.25rem;">Live Plotly Configurator (Stage 3)</h4>
-                                <p style="font-size: 0.8rem;">Cleaned column names map to x/y selectors. System suggests chart drill-downs (e.g. "We detected correlation in Food sales").</p>
-                            </div>
-                            <div class="glass-card" style="padding: 1rem; border-left: 2px solid var(--accent);">
-                                <h4 style="color: #fff; margin-bottom: 0.25rem;">Nova Strategic Core (Stage 4)</h4>
-                                <p style="font-size: 0.8rem;">Local LLM provides strategic summaries (e.g. "14% latency increase identified in West region"). Includes natural-language follow-up question box.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex-col" style="height: 100%; max-height: 380px;">
-                        <!-- Mockup dashboard interface -->
-                        <div class="mockup-screen">
-                            <div class="mockup-header">
-                                <div class="mockup-dot red"></div>
-                                <div class="mockup-dot yellow"></div>
-                                <div class="mockup-dot green"></div>
-                                <div class="mockup-title-bar">DzDataAutomate // Nova Strategic Core</div>
-                            </div>
-                            <div class="mockup-body flex-col" style="gap: 0.5rem; justify-content: space-between;">
-                                
-                                <div class="glass-card" style="padding: 0.75rem; background: rgba(57,255,20,0.02); border-color: rgba(57,255,20,0.2);">
-                                    <div style="font-weight: 700; color: var(--accent); font-size: 0.8rem; margin-bottom: 0.25rem;">AI Strategic Insight (Local Ollama LLM):</div>
-                                    <p style="font-size: 0.7rem; color: #fff;">
-                                        "A 14% latency increase has been detected in the West region distribution cluster. This correlates with a spike in unoptimized categorical transactions. Recommend executing re-routing pipeline."
-                                    </p>
-                                    <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
-                                        <button style="background: var(--accent); border: none; color: #000; font-size: 0.6rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 4px; cursor: pointer;">Execute Patch</button>
-                                        <button style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); color: #fff; font-size: 0.6rem; padding: 0.2rem 0.5rem; border-radius: 4px; cursor: pointer;">Simulate Only</button>
-                                    </div>
-                                </div>
-                                
-                                <div style="display: flex; align-items: center; background: rgba(0,0,0,0.4); border: 1px solid var(--glass-border); border-radius: 8px; padding: 0.4rem 0.8rem; margin-top: 0.5rem;">
-                                    <input type="text" placeholder="Ask follow-up questions about this dataset..." style="flex:1; background: none; border: none; outline: none; font-size: 0.7rem; color:#fff;" disabled>
-                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                                </div>
-                                
-                                <div class="grid-3" style="text-align: center; gap: 0.5rem; margin-top: 0.25rem;">
-                                    <div style="background: rgba(57,255,20,0.05); border: 1px solid rgba(57,255,20,0.2); padding: 0.3rem; border-radius: 4px; color: var(--accent); font-size: 0.6rem; font-weight: 700; cursor: pointer;">⬇️ PDF Report</div>
-                                    <div style="background: rgba(57,255,20,0.05); border: 1px solid rgba(57,255,20,0.2); padding: 0.3rem; border-radius: 4px; color: var(--accent); font-size: 0.6rem; font-weight: 700; cursor: pointer;">⬇️ Clean CSV</div>
-                                    <div style="background: rgba(57,255,20,0.05); border: 1px solid rgba(57,255,20,0.2); padding: 0.3rem; border-radius: 4px; color: var(--accent); font-size: 0.6rem; font-weight: 700; cursor: pointer;">⬇️ Jupyter Notebook</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="speaker-notes">
-                    <ul>
-                        <li>Present Slide 15: This walkthrough represents Screens 5, 6, and 7 (Visualization, AI insights, and final export).</li>
-                        <li>Highlight the Nova Strategic Core: The AI parses metadata and returns domain-specific alerts (such as the 14% latency alert).</li>
-                        <li>Show the export options:
-                            <ul>
-                                <li>The executive PDF report.</li>
-                                <li>The cleaned CSV file.</li>
-                                <li>The reproducible Jupyter Notebook (Python script) to allow advanced users to replicate the exact steps.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- SLIDE 16: Conclusion & Vision (Light Theme) -->
-            <section class="slide light-theme" id="slide-16">
-                <div class="flex-col" style="height: 100%; justify-content: center; position: relative;">
-                    <div>
-                        <span style="font-size: 0.9rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-dark); background: rgba(57, 255, 20, 0.1); padding: 0.4rem 1rem; border-radius: 20px;">
-                            Conclusion & Future Vision
-                        </span>
-                    </div>
-
-                    <h1 style="font-size: 3rem; margin-top: 1.5rem; margin-bottom: 2rem; color: var(--bg-dark);">
-                        Democratizing Data Science <br>across the <span style="color: var(--accent-dark);">Algerian Market</span>
-                    </h1>
-
-                    <div class="grid-3" style="gap: 2rem; margin-bottom: 3rem;">
-                        <div class="glass-card" style="padding: 1.5rem;">
-                            <strong style="color: var(--bg-dark); font-size: 1.1rem; display: block; margin-bottom: 0.5rem;">Technically Sound</strong>
-                            Automated pipeline fully executed and validated using representative domestic datasets.
-                        </div>
-                        <div class="glass-card" style="padding: 1.5rem;">
-                            <strong style="color: var(--bg-dark); font-size: 1.1rem; display: block; margin-bottom: 0.5rem;">Strategically Defensible</strong>
-                            Adapting to key national constraints (data sovereignty, internet coverage, pricing blocks).
-                        </div>
-                        <div class="glass-card" style="padding: 1.5rem;">
-                            <strong style="color: var(--bg-dark); font-size: 1.1rem; display: block; margin-bottom: 0.5rem;">Financially Viable</strong>
-                            Zero initial server liabilities, cash positive by month 8 under conservative forecasts.
-                        </div>
-                    </div>
-
-                    <div style="border-left: 4px solid var(--accent-dark); padding-left: 1.5rem; max-width: 800px;">
-                        <p style="font-size: 1.15rem; color: var(--bg-dark); font-weight: 600; line-height: 1.5;">
-                            "To establish a locally developed platform as the reference solution for data-driven decision-making in Algeria and the broader North African region."
-                        </p>
-                    </div>
-                </div>
-
-                <div class="speaker-notes">
-                    <ul>
-                        <li>Recap the three foundations of our defense:
-                            <ul>
-                                <li><strong>Technically sound:</strong> Core pipeline tested and verified.</li>
-                                <li><strong>Strategically defensible:</strong> Resolving key domestic blockers (confidentiality, cost).</li>
-                                <li><strong>Financially viable:</strong> Breakeven in year 1.</li>
-                            </ul>
-                        </li>
-                        <li>Highlight future directions: integration of clustering/time-series, Arabic-language localization, and formalizing incubator partnerships.</li>
-                        <li>Close the defense: "Thank you for your attention. We are ready to take your questions."</li>
-                    </ul>
-                </div>
-            </section>
-
-        </main>
+</main>
 
         <!-- Footer Control Overlay -->
         <footer class="footer-overlay">
@@ -1250,7 +1144,7 @@ correlation = df["promo"].corr(df["revenue"])
                     <div class="progress-bar-fill"></div>
                 </div>
                 <span style="font-weight: 600; min-width: 45px; text-align: center;">
-                    <span class="current-slide-num">1</span> / <span class="total-slides-num">16</span>
+                    <span class="current-slide-num">1</span> / <span class="total-slides-num">18</span>
                 </span>
                 <button class="control-btn next" title="Next Slide (Right Arrow/Space)">▶</button>
                 <button class="control-btn notes" title="Speaker Notes (N)" style="margin-left: 0.5rem; font-weight: bold;">N</button>
